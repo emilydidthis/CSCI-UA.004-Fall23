@@ -57,21 +57,21 @@ Web hosting and domain names
 The class will meet twice a week for one hour and fifteen minutes. Generally, each week will consist of lecture material, class interaction, and a project-based assignment.
 
 ## i6 Account
-In addition to your NYU Home Account, we will be using a web hosting account on a Unix server which will be assigned to you automatically based on your enrollment. This is called an “i6” account and we will use it to host our websites. Common questions about i6 accounts are answered on this FAQ page. If you forget your i6 password and would like to reset it, go to this page for instructions on how to do so.
+In addition to your NYU Home Account, we will be using a web hosting account on a Unix server which will be assigned to you automatically based on your enrollment. This is called an [“i6” account](https://cims.nyu.edu/webapps/content/systems/resources/i6) and we will use it to host our websites. Common questions about i6 accounts are answered on this [FAQ page](https://cims.nyu.edu/webapps/content/systems/resources/i6/faq). If you forget your i6 password and would like to reset it, go to [this page](https://cims.nyu.edu/webapps/content/systems/resources/i6/resetpassword) for instructions on how to do so.
 
 ## Computers and File Backup
-As class time will include live coding and individual exercises, you are encouraged to bring a laptop computer. There are also multiple student technology centers on campus. Make sure to save copies of your projects and back them up to other media, such as an external drive or use a version control system like GitHub.
+As class time will include live coding and individual exercises, you are encouraged to bring a laptop computer. There are also multiple [student technology centers](https://www.nyu.edu/life/information-technology/teaching-and-learning-services/studios-and-computing-labs/student-technology-centers-computer-labs.html) on campus. Make sure to save copies of your projects and back them up to other media, such as an external drive or use a version control system like [GitHub](https://github.com/).
 
 ## Textbooks
 
 ### Required
-Learning Web Design: A Beginner’s Guide to HTML, CSS, JavaScript, and Web Graphics  
+[Learning Web Design: A Beginner’s Guide to HTML, CSS, JavaScript, and Web Graphics](https://bobcat.library.nyu.edu/permalink/f/1c17uag/nyu_aleph007494992)  
 5th Edition  
 Jennifer Robbins  
 ISBN: 978-1-491-96020-2  
 
 ### Optional
-Responsive Web Design with HTML5 and CSS  
+[Responsive Web Design with HTML5 and CSS](https://bobcat.library.nyu.edu/permalink/f/ci13eu/nyu_aleph008942698)  
 4th Edition  
 Ben Frain  
 ISBN: 978-1-803-24271-2  
