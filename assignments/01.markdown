@@ -1,0 +1,153 @@
+---
+
+layout: assignments
+title: "Assignment #1"
+due-date: Sept 13
+topic: Unix
+live: false
+category: assignment
+
+---
+
+## Assignment #1
+For this assignment you will be writing 3 programs which should be saved independently as their own ".py" file. The filename you should use for each program is outlined in the sections below. When you're finished you should submit your programs to the Assignment #1 category on Brightspace.
+
+For each program, remember to comment your source code as if you were describing your code to someone who may be viewing it for the first time. Also include your name, the date, your class section and the name of your program at the top of your file.
+
+You may work by yourself or with a partner. Remember, collaborating just entails discussing approaches to the problems; **you should not be writing actual code together**. If you choose to work with someone else please be sure to give them credit in your source code and on Brightspace when you submit your work.  Each member of a team must submit their own unique copy of the assignment to get credit for the assignment.
+
+Make sure that IDLE is set up to use a fixed-width font (Courier is the font that I use in class) and that your font size is set to 14pt. On a Mac you can click on IDLE->Preferences to adjust your font size; On a PC you can click on Options->Configure IDLE
+
+
+<div class="section-break"><br></div>
+
+
+### Problem #1: Variables & Print Statements
+Given the following variables:
+
+```
+score1 = 100
+score2 = 94
+score3 = 88
+first_name = "Ada"
+last_name = "Lovelace"
+class_curve = 1.5
+```
+
+Write a program that generates the following output. Ensure that your output matches the sample output exactly, including spaces. You MUST use the variables given (e.g. you can't use the numeric literal 94 in your program -- you must refer to the variable `score2`). 
+
+Note that there is no user input required in this program.
+
+```
+Grade report for: Ada Lovelace
+Individual scores: 100, 94, 88
+Average Score: 94
+Average Score with Class Curve: 95.5
+``` 
+
+This program should be named as follows:
+LastNameFirstName_assign1_problem1.py (for example, "ZhaoEmily_assign1_problem1.py")
+
+<div class="section-break"><br><br></div>
+
+### Problem #2: Using the print function
+Prompt the user to enter 3 names. Store each name in a separate variable. Then display the names back to the user in every possible order using the output below as a guide. Note the formatting in the output below -- make your program match the formatting exactly. 
+
+```
+Please enter name #1: Allison
+Please enter name #2: Jeremy
+Please enter name #3: Emily
+
+Here are your names in every possible order:
+--------------------------------------------
+
+1. Allison, Jeremy, Emily
+
+2. **Allison** **Emily** **Jeremy**
+
+3. Jeremy-Allison-Emily
+
+4. Jeremy
+Emily
+Allison
+
+5. Emily
+   Jeremy!
+   Allison
+
+6. ---Emily
+   ------Allison
+   ---------Jeremy
+```
+
+**Note**  
+Your program should not print out the names Allison, Jeremy and Emily -- it should print out whatever names the user decides to enter. For example, if I enter Pikachu, Charmander and Squirtle the output would change to reflect these names.
+
+This program should be named as follows:
+LastNameFirstName_assign1_problem2.py (for example, "ZhaoEmily_assign1_problem2.py")
+
+<div class="section-break"><br><br></div>
+
+### Problem #3: Math Expressions [Part A + B]
+
+*Note: This program will require the use of the `format()` function, which is introduced in [Module 2](https://cs.nyu.edu/elearning/CSCI_UA_0002/module02.php#format).*
+
+You have recently been hired by a local bakery to design a program that simplifies the conversion of recipe measurements. To help you get started, the bakery has provided you with a list of common conversions:
+
+1 ml = 0.202884 tsp   
+1 tbsp = 3 tsp  
+1 cup = 16 tbsp  
+1 pint = 2 cups  
+1 quart = 2 pints  
+1 gallon = 4 quarts  
+1 floz = 29.5735 ml  
+
+Using the formulas above, write a program that takes an initial user input in milliliters, and creates a table of all the conversions. Here's a sample run, using **250 milliliters** as an initial input: 
+
+```
+Enter an amount (in ML) to convert: 250.0
+--------------------------------------------------------------
+                 mL to US Fluid Volume Units                  
+--------------------------------------------------------------
+	ml:                     250.0
+	tsp:                    50.721000000000004
+	tbsp:                   16.907
+	cup(s):                 1.0566875
+	pint(s):                0.52834375
+	quart(s):               0.264171875
+	gallon(s):              0.06604296875
+	fl oz:                  8.453514125822105
+```
+
+While your output should match as closely as possible in terms of spacing, you do not worry about decimal point precision for this program (no numeric formatting required).
+
+
+### But! Before you write any code...
+
+In computer science, **pseudocode** is a plain language description of the steps in an algorithm. You can think of it as writing---first in your native language---an outline or initial draft of an essay that you will eventually have to translate to French, or Python in our case.
+
+**Part A**  
+Using code comments, write out your plan (aka the pseudocode), IN ENGLISH, for how you will approach creating this table. I'll get you started:
+
+```
+# First, I will determine the width of the entire table
+# Then, I will figure out a way to center the title of the table
+# For the indentation on the left, I will...
+#
+#
+#
+# As for creating two columns, I will...
+
+```
+
+**Part B**  
+ Now you can code the program, following your plan above.
+ 
+ Try your best to programatically figure out the spaces; I don't want to see strings defined like this:
+ ```
+ ml = "            ml:"
+ ```
+This is known as **\"hard-coding.\"** When programming, it's best to imagine that the content might change. If I suddenly wanted to increase the left indent, I would have to go through each hardcoded variable, and manually add a space---that sounds like a lot of work! Let's try to find a way to avoid that.
+ 
+
+ This program should be named as follows: LastNameFirstName_assign1_problem3.py (for example, “ZhaoEmily_assign1_problem3.py”) Please include both parts A and B in the same file.

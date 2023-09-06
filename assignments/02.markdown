@@ -1,0 +1,164 @@
+---
+
+layout: assignments
+title: "Assignment #2"
+due-date: Sep 20 
+topic: HTML
+live: false
+
+---
+
+## Assignment #2
+For this assignment you will be writing 3 programs which should be saved independently as their own ".py" file. The filename you should use for each program is outlined in the sections below. When you're finished you should submit your programs to the Assignment #2 category inside of NYU Brightspace.
+
+You may work by yourself or with a partner. Remember, collaborating just entails discussing approaches to the problems; you should not be writing actual code together. If you choose to work with someone else please be sure to give them credit in your source code and on Brightspace when you submit your work.  Each member of a team must submit their own unique copy of the assignment to get credit for the assignment.
+
+<div class="section-break"><br></div>
+
+### Problem #1: Grade Calculator
+Your grade breakdown for the class is as follows:
+
+Assignments: 30%  
+Weekly Quizzes & Participation: 10%  
+Midterm Exam: 30%  
+Final Exam: 30%  
+
+<!-- Your final grade for the class will be assigned with the following ranges:
+
+<div class="table" markdown="1">
+```
+A		93-100  
+A-		90-92.9  
+B+		87-89.9  
+B		83-86.9  
+B-		80-82.9  
+C+		77-79.9  
+C		73-76.9  
+C-		70-72.9  
+D+		67-69.9  
+D		63-66.9  
+```
+</div> -->
+
+Write a program that calculates the score you need to receive on the final exam to receive an inputted desired grade. Take user input for all values.
+<br>
+
+```
+Enter overall assignments grade: 87.4
+Enter overall quiz grade: 96.5
+Enter midterm grade: 82.7
+What would you like your final grade to be?: 93.0
+
+You need to receive a 107.73% on your final to get a 93.0 in the class.
+```
+
+Comment your source code and describe your code to someone who may be viewing it for the first time. Also include your name, the date, your class section and the name of your program at the top of your file.
+
+This program should be named as follows:
+LastNameFirstName_assign1_problem1.py (for example, "ZhaoEmily_assign2_problem1.py")
+
+<div class="section-break"><br><br></div>
+
+### Problem #2: Compound Interest
+When you invest money in a savings account your money earns a certain amount of interest over a period of time. For example, investing $100 in an account that yields 1% interest annually would mean that after 1 year your account would be worth $101.
+
+If you left this money in your account you would earn additional interest in the following year due to the fact that your account now has $101 instead of the initial deposit of $100. You would earn interest on the initial deposit plus the $1 you earned in interest - this is called "compound interest."
+
+For this problem you will be writing a program that calculates how much a person can earn by investing in a high yield savings account. The program should ask the user for an initial deposit amount and an interest rate. The program will then generate a 3 month projection that illustrates how much money the user can expect to earn. Assume that interest is compounded monthly (i.e. if your account earns a rate of 12% interest annually then you would earn a rate of 1% per month). Here's a sample running of the program:
+
+```
+This program will project how much you can earn by investing 
+money in a high-yield savings account over a 3 month period.
+
+To begin, enter how much money you would like
+to initially invest (i.e. 500): 500
+Next, enter your projected annual interest rate. 
+For example, enter 5 for 5%: 5
+
+------------------ Calculating ------------------
+
+Month  Starting Balance  Interest  Ending Balance  
+1      500.00            2.08      502.08          
+2      502.08            2.09      504.18          
+3      504.18            2.10      506.28          
+```
+And here's another sample running:
+
+```
+This program will project how much you can earn 
+by investing money in a high-yield savings account
+over a 3 month period.
+
+To begin, enter how much money you would like to 
+initially invest (i.e. 500): 10000
+Next, enter your projected annual interest rate. 
+For example, enter 5 for 5%: 5
+
+------------------ Calculating ------------------
+
+Month  Starting Balance  Interest  Ending Balance  
+1      10,000.00         41.67     10,041.67       
+2      10,041.67         41.84     10,083.51       
+3      10,083.51         42.01     10,125.52       
+```
+
+You can assume that the user will enter reasonable input values (i.e. all inputted values will be valid positive floating point numbers.) Ensure that your program is formatted correctly so that your values line up as in the sample output above (hint: use the format() function.)
+
+It is best practice to only format your values at the very end when creating the table. If you format your numbers along the way, you might find your final results off by 0.01. 
+
+<!-- Note that you may run into a rounding issue if you perform your calculations on numbers that may contain a floating point inaccuracy. It's recommended that you use the round function to round your floating point values to 2 decimal places before using them in a math expression. The round function can be used as follows:
+
+```
+# round value to 2 decimal places and return a float
+value_rounded = round(value, 2)
+``` -->
+
+Comment your source code and describe your code to someone who may be viewing it for the first time. Also include your name, the date, your class section and the name of your program at the top of your file.
+
+This program should be named as follows:
+LastNameFirstName_assign2_problem2.py (for example, "ZhaoEmily_assign2_problem2.py")
+
+If you shared any code or helped out a group member with this project please be sure to give credit to that person by including their names in the commented header of your program.
+
+<div class="section-break"><br><br></div>
+
+### Problem #3: Sum of Place Values
+Write a program that prompts the user to enter two numbers. These numbers will always be >= 0 and <= 999. You can assume that the user will always supply you with a integers within this range. Next, compute the sum of the digits represented in each place value in that number. For example, if the numbers supplied are 123 and 456 you would compute the sum of the ones place (3+6), the sum of the tens place (2+5) and the sum of the hundreds place (1+4). Here are a few sample runnings of your program:
+
+```
+Enter a number between 0 and 999: 123
+Enter another number between 0 and 999: 456
+Sum of ones     = 3 + 6 = 9
+Sum of tens     = 2 + 5 = 7
+Sum of hundreds = 1 + 4 = 5
+```
+```
+Enter a number between 0 and 999: 0
+Enter another number between 0 and 999: 999
+Sum of ones     = 0 + 9 = 9
+Sum of tens     = 0 + 9 = 9
+Sum of hundreds = 0 + 9 = 9
+```
+```
+Enter a number between 0 and 999: 3
+Enter another number between 0 and 999: 12
+Sum of ones     = 3 + 2 = 5
+Sum of tens     = 0 + 1 = 1
+Sum of hundreds = 0 + 0 = 0
+```
+```
+Enter a number between 0 and 999: 982
+Enter another number between 0 and 999: 861
+Sum of ones     = 2 + 1 = 3
+Sum of tens     = 8 + 6 = 14
+Sum of hundreds = 9 + 8 = 17
+```
+
+Hint: Think about how you isolate the "ones" digit - is there a math operation that you can use to extract this information? Huge hint: what happens when you divide the number by 10? Does that give you any usable information? How about the remainder of this division operation?
+
+Hint: Once you isolate the "ones" digit you then need to move on to the "tens" digit. One way to do this would be to "throw away" the ones digit so you can focus your attention on the "tens" digit. Is there a way you can do this using a math operation?
+
+Comment your source code and describe your code to someone who may be viewing it for the first time. Also include your name, the date, your class section and the name of your program at the top of your file.
+
+This program should be named as follows:
+LastNameFirstName_assign2_problem3.py (for example, "ZhaoEmily_assign2_problem3.py")

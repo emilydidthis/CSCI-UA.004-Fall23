@@ -1,0 +1,9 @@
+01:
+  Monday:
+    - topic: introduction
+    - assigned: Chapter 2
+    - materials: slides
+  Wednesday:
+    - topic: Unix
+    - assigned: Chapter 4
+    - materials: slides

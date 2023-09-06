@@ -1,0 +1,333 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+// $base-color: #B99FFF; //#2E38B7
+// $accent-color: #9fefff; //#A42EB7
+$base-color: #1d97b0; //#2E38B7
+$accent-color: #72d1e4; //#A42EB7
+$bg-color: #232323;
+$code-bg-color: #000000;
+$font-color: rgb(244, 244, 244);
+$link-color: #B99FFF; //#551A8B
+
+// light 
+// $bg-color:rgb(244, 244, 244) ;
+// $font-color: #212121;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+strong {
+    font-weight: 600;
+}
+
+h1 {
+    font-family: IBM Plex Sans;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+h2, h3 {
+    font-size: 16px;
+    padding-bottom: 5px;
+    padding-left: 15px; /* creates seamless line between h2 and p (versus using margin) */
+}
+
+h2 {
+    margin-top: 30px;
+    border-left: 2px solid $base-color;
+}
+
+
+h2 ~ ol {
+    border-left: 2px solid $base-color;
+    padding-left: 35px;
+}
+
+h3 {
+    padding-bottom: 0px;
+}
+
+h2 ~ p { /* General sibling combinator */
+    border-left: 2px solid $base-color;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 16px;
+    // font-weight: 500;
+    margin-left: 15px;
+    border-left: 2px solid $accent-color;
+    /* two shadows to create a 2px left outline */
+    box-shadow: 
+        -13px 0 0 $bg-color,
+        -15px 0 0 $base-color;
+}
+
+h3 + p { /* General sibling combinator */
+    border-left: 2px solid $accent-color;
+    margin-left: 15px;
+    padding-left: 15px;
+    // padding-bottom: 10px;
+    box-shadow: 
+        -13px 0 0 $bg-color,
+        -15px 0 0 $base-color;
+}
+
+body {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    margin: 40px;
+    line-height: 125%;
+    background-color: $bg-color;
+    color: $font-color;
+}
+
+body a {
+    color: $link-color;
+    // font-weight: normal;
+    text-decoration: none;
+}
+
+nav {
+    margin: 20px 0px;
+    display: block;
+    a {
+        color: $font-color;
+        font-weight: 500;
+        display: block;
+    }
+    .section-days{
+        font-weight: 500;
+    }
+    a:active {
+        color: #551A8B;
+    }
+    li {
+        display: block;
+    }
+    display: flex;
+    
+    .nav-section {
+        margin-right: 70px;
+    }
+
+    span {
+        display: none;
+    }
+    
+    /* links hovered over that are not the current nav item */
+    a:not(.nav-current):hover span {
+        display: inline-block;
+    }
+}
+
+.nav-current::before {
+    content: "* "
+}
+
+/* LAYOUT */
+.syllabus, .assignments, .week {
+    display: flex;
+}
+
+.syllabus {
+    .column-1 {
+        width: 35%;
+        padding-right: 50px;
+    }
+    .column-2 {
+        width: 55%;
+    }
+}
+
+.assignments {
+    .column-1 {
+        width: 50%;
+        padding-right: 50px;
+    }
+    .column-2 {
+        width: 50%;
+    }
+}
+
+.week {
+    border-left: 2px solid $base-color;
+    h3, p {
+        box-shadow: 0 0 0;
+        border-left: 0;
+        padding-left: 0;
+    }
+
+    p {
+        margin-left: 15px; 
+    }
+
+    h3 {
+        padding-top: 15px;
+    }
+
+    ul {
+        padding-left: 35px;
+        // padding-top:5px;
+    }
+    .week-column {
+        margin-left: 15px;
+        border-left: 2px solid $accent-color; 
+    }
+    h3 {
+        display: none;
+    }
+}
+.topics{
+    width: 35%;
+}
+
+.assigned{
+    width: 40%;
+}
+
+.materials{
+    width: 15%;
+    a {
+        display: block;
+        padding: 5px 0px;
+    }
+}
+
+// Assignments Pages
+.assignment-page{
+    width: 70%;
+    min-width: 850px;
+    border-left: 2px solid $base-color
+   
+
+    h1, h2, h3, p {
+        border-left: none;
+        box-shadow: none;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+
+
+    // styling paragraphs to have double border
+    h3 ~ p { 
+        border-left: 2px solid $accent-color;
+        margin-left: 15px;
+        padding: 5px 15px;
+        // padding-bottom: 10px;
+        box-shadow: 
+            -13px 0 0 $bg-color,
+            -15px 0 0 $base-color;
+    }
+
+    // only want for outtermost ul, not nested
+    ul:not(ul ul) { 
+        border-left: 2px solid $accent-color;
+        margin-left: 15px;
+        padding: 5px 30px;
+        // padding-bottom: 10px;
+        box-shadow: 
+            -13px 0 0 $bg-color,
+            -15px 0 0 $base-color;
+    }
+
+    ul ul {
+        padding-left: 15px;
+    }
+
+    img {
+        width: 60%;
+    }
+
+    // Code styling
+    .highlight:not(pre) {
+        border-left: 2px solid $accent-color;
+        /* two shadows to create a 2px left outline */
+        box-shadow: 
+            -13px 0 0 $bg-color,
+            -15px 0 0 $base-color;
+
+        margin: 0px 15px;
+        padding: 15px 0px;
+        white-space: pre-wrap;   
+    }
+
+    pre {
+        background-color: $code-bg-color;
+        padding: 10px;
+        margin-left: 15px;
+        white-space: pre-wrap;  
+    }
+
+    .section-break {
+        box-shadow: 
+            -13px 0 0 $bg-color,
+            -15px 0 0 $base-color;
+        border-left: none;
+        margin-left: 15px;
+    }
+}
+
+// code that is not inside of a pre (aka code blocks)
+code:not(pre code) {
+    background-color: $code-bg-color;
+    padding: 3px;
+    font-weight: 500;
+}
+
+// tables
+.table {
+    pre, code {
+        background-color: $code-bg-color;
+        font-family: IBM Plex Sans;
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .syllabus, .assignments, .week {
+        flex-direction: column;
+        .column-1, .column-2 {
+            width: 100%;
+        }
+    }
+
+    .week {
+        h3 {
+            display: block;
+        }
+
+        .topics, .assigned, .materials {
+            width: 100%;
+        }
+    }
+
+    .assignment-page{
+        min-width: auto;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    body {
+        margin: 20px;
+    }
+    nav {
+        display: block;
+        .nav-section{
+            margin-bottom: 10px;
+        }
+    }
+  }

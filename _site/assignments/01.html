@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment #1</title>
+    <link rel="stylesheet" href="http://localhost:4000/CSCI-UA.0002-Spring23/assets/css/styles.css">
+    <link rel="icon" type="image/ico" href="http://localhost:4000/CSCI-UA.0002-Spring23/assets/images/favicon.ico?v=1">
+  </head>
+  <body>
+    <h1>Intro to Web Design & Computer Principles – Fall 2023</h1>
+    <nav>
+    <!-- <a href="/">Syllabus</a>
+    <a href="/schedule.html">Schedule + Class Notes</a>
+    <a href="/assignments.html">Assignments</a> -->
+    <!-- <div class="nav-section">
+    
+    </div> -->
+    <div class="nav-section">
+        <a href="http://localhost:4000/CSCI-UA.0002-Spring23/"><span>*&nbsp;</span>Syllabus</a>
+        <a href="http://localhost:4000/CSCI-UA.0002-Spring23/schedule.html"><span>*&nbsp;</span>Schedule + Notes</a>
+        <a href="http://localhost:4000/CSCI-UA.0002-Spring23/assignments.html"><span>*&nbsp;</span>Assignments</a>
+        
+    </div>  
+    <div class="nav-section">
+        <a href="https://pollev.com/emilyzhao"><span>*&nbsp;</span>Poll Everywhere</a>
+        <a href="https://brightspace.nyu.edu/d2l/home/258670"><span>*&nbsp;</span>Brightspace</a>
+        <a href="https://edstem.org/us/courses/36237/discussion/"><span>*&nbsp;</span>Tutoring</a>
+    </div>      
+
+</nav>
+    <div class="assignment-page">
+    <h2 id="assignment-1">Assignment #1</h2>
+<p>For this assignment you will be writing 3 programs which should be saved independently as their own “.py” file. The filename you should use for each program is outlined in the sections below. When you’re finished you should submit your programs to the Assignment #1 category on Brightspace.</p>
+
+<p>For each program, remember to comment your source code as if you were describing your code to someone who may be viewing it for the first time. Also include your name, the date, your class section and the name of your program at the top of your file.</p>
+
+<p>You may work by yourself or with a partner. Remember, collaborating just entails discussing approaches to the problems; <strong>you should not be writing actual code together</strong>. If you choose to work with someone else please be sure to give them credit in your source code and on Brightspace when you submit your work.  Each member of a team must submit their own unique copy of the assignment to get credit for the assignment.</p>
+
+<p>Make sure that IDLE is set up to use a fixed-width font (Courier is the font that I use in class) and that your font size is set to 14pt. On a Mac you can click on IDLE-&gt;Preferences to adjust your font size; On a PC you can click on Options-&gt;Configure IDLE</p>
+
+<div class="section-break"><br /></div>
+
+<h3 id="problem-1-variables--print-statements">Problem #1: Variables &amp; Print Statements</h3>
+<p>Given the following variables:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>score1 = 100
+score2 = 94
+score3 = 88
+first_name = "Ada"
+last_name = "Lovelace"
+class_curve = 1.5
+</code></pre></div></div>
+
+<p>Write a program that generates the following output. Ensure that your output matches the sample output exactly, including spaces. You MUST use the variables given (e.g. you can’t use the numeric literal 94 in your program – you must refer to the variable <code class="language-plaintext highlighter-rouge">score2</code>).</p>
+
+<p>Note that there is no user input required in this program.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Grade report for: Ada Lovelace
+Individual scores: 100, 94, 88
+Average Score: 94
+Average Score with Class Curve: 95.5
+</code></pre></div></div>
+
+<p>This program should be named as follows:
+LastNameFirstName_assign1_problem1.py (for example, “ZhaoEmily_assign1_problem1.py”)</p>
+
+<div class="section-break"><br /><br /></div>
+
+<h3 id="problem-2-using-the-print-function">Problem #2: Using the print function</h3>
+<p>Prompt the user to enter 3 names. Store each name in a separate variable. Then display the names back to the user in every possible order using the output below as a guide. Note the formatting in the output below – make your program match the formatting exactly.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Please enter name #1: Allison
+Please enter name #2: Jeremy
+Please enter name #3: Emily
+
+Here are your names in every possible order:
+--------------------------------------------
+
+1. Allison, Jeremy, Emily
+
+2. **Allison** **Emily** **Jeremy**
+
+3. Jeremy-Allison-Emily
+
+4. Jeremy
+Emily
+Allison
+
+5. Emily
+   Jeremy!
+   Allison
+
+6. ---Emily
+   ------Allison
+   ---------Jeremy
+</code></pre></div></div>
+
+<p><strong>Note</strong><br />
+Your program should not print out the names Allison, Jeremy and Emily – it should print out whatever names the user decides to enter. For example, if I enter Pikachu, Charmander and Squirtle the output would change to reflect these names.</p>
+
+<p>This program should be named as follows:
+LastNameFirstName_assign1_problem2.py (for example, “ZhaoEmily_assign1_problem2.py”)</p>
+
+<div class="section-break"><br /><br /></div>
+
+<h3 id="problem-3-math-expressions-part-a--b">Problem #3: Math Expressions [Part A + B]</h3>
+
+<p><em>Note: This program will require the use of the <code class="language-plaintext highlighter-rouge">format()</code> function, which is introduced in <a href="https://cs.nyu.edu/elearning/CSCI_UA_0002/module02.php#format">Module 2</a>.</em></p>
+
+<p>You have recently been hired by a local bakery to design a program that simplifies the conversion of recipe measurements. To help you get started, the bakery has provided you with a list of common conversions:</p>
+
+<p>1 ml = 0.202884 tsp <br />
+1 tbsp = 3 tsp<br />
+1 cup = 16 tbsp<br />
+1 pint = 2 cups<br />
+1 quart = 2 pints<br />
+1 gallon = 4 quarts<br />
+1 floz = 29.5735 ml</p>
+
+<p>Using the formulas above, write a program that takes an initial user input in milliliters, and creates a table of all the conversions. Here’s a sample run, using <strong>250 milliliters</strong> as an initial input:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Enter an amount (in ML) to convert: 250.0
+--------------------------------------------------------------
+                 mL to US Fluid Volume Units                  
+--------------------------------------------------------------
+	ml:                     250.0
+	tsp:                    50.721000000000004
+	tbsp:                   16.907
+	cup(s):                 1.0566875
+	pint(s):                0.52834375
+	quart(s):               0.264171875
+	gallon(s):              0.06604296875
+	fl oz:                  8.453514125822105
+</code></pre></div></div>
+
+<p>While your output should match as closely as possible in terms of spacing, you do not worry about decimal point precision for this program (no numeric formatting required).</p>
+
+<h3 id="but-before-you-write-any-code">But! Before you write any code…</h3>
+
+<p>In computer science, <strong>pseudocode</strong> is a plain language description of the steps in an algorithm. You can think of it as writing—first in your native language—an outline or initial draft of an essay that you will eventually have to translate to French, or Python in our case.</p>
+
+<p><strong>Part A</strong><br />
+Using code comments, write out your plan (aka the pseudocode), IN ENGLISH, for how you will approach creating this table. I’ll get you started:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># First, I will determine the width of the entire table
+# Then, I will figure out a way to center the title of the table
+# For the indentation on the left, I will...
+#
+#
+#
+# As for creating two columns, I will...
+
+</code></pre></div></div>
+
+<p><strong>Part B</strong><br />
+ Now you can code the program, following your plan above.</p>
+
+<p>Try your best to programatically figure out the spaces; I don’t want to see strings defined like this:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ml = "            ml:"
+</code></pre></div></div>
+<p>This is known as <strong>"hard-coding."</strong> When programming, it’s best to imagine that the content might change. If I suddenly wanted to increase the left indent, I would have to go through each hardcoded variable, and manually add a space—that sounds like a lot of work! Let’s try to find a way to avoid that.</p>
+
+<p>This program should be named as follows: LastNameFirstName_assign1_problem3.py (for example, “ZhaoEmily_assign1_problem3.py”) Please include both parts A and B in the same file.</p>
+
+    
+</div>
+
+
+  </body>
+</html>
