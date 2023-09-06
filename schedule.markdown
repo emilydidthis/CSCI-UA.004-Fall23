@@ -23,7 +23,7 @@ Chapter 2: How the Web Works
 <div class="week-column materials" markdown="1">
 
 ### Materials
-- Slides
+<a href="{{ site.url }}{{ site.baseurl }}/assets/slides/01_Website-Internet.pdf" >what-is-the-internet.pdf</a>
 
 </div>
 </div>
@@ -47,7 +47,7 @@ Chapter 4: Creating a Simple Page
 <div class="week-column materials" markdown="1">
 
 ### Materials
-- Slides
+
 
 </div>
 </div>
