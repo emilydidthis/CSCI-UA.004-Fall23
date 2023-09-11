@@ -2,7 +2,7 @@
 
 layout: assignments
 title: "Assignment #8"
-due-date: Nov 27 
+due-date: Dec 2 
 topic: JavaScript
 live: false
 

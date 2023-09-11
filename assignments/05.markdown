@@ -2,7 +2,7 @@
 
 layout: assignments
 title: "Assignment #5"
-due-date: Oct 19 
+due-date: Oct 23 
 topic: Vector Graphics
 live: false
 

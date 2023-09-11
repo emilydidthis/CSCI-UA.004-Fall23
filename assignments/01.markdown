@@ -2,7 +2,7 @@
 
 layout: assignments
 title: "Assignment #1"
-due-date: Sept 13
+due-date: Sept 18
 topic: Unix
 live: false
 category: assignment

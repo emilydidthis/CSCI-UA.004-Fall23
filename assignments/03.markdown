@@ -2,7 +2,7 @@
 
 layout: assignments
 title: "Assignment #3"
-due-date: Oct 2
+due-date: Oct 7
 topic: CSS
 live: false
 
