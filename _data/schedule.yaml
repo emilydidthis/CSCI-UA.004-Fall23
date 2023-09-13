@@ -1,9 +1,22 @@
-01:
-  Monday:
-    - topic: introduction
-    - assigned: Chapter 2
-    - materials: slides
-  Wednesday:
-    - topic: Unix
-    - assigned: Chapter 4
-    - materials: slides
+
+schedule:
+  - week_number: 1
+    classes: 
+      - topics: Introduction + Overview
+        assigned: |
+          *Learning Web Design*  
+          Chapter 2: How the Web Works
+        files:
+        - name: what-is-the-internet.pdf
+          path: /assets/slides/01_Website-Internet.pdf
+          type: slides
+  - week_number: 2
+    classes:
+      - topics: Unix + HTML
+        assigned: 
+        - "Chapter 4: Creating a Simple Page"
+        - "Assignment #1"
+        files:
+        - name: operating-systems.pdf
+          path: /assets/slides/01_Website-Internet.pdf
+          type: slides

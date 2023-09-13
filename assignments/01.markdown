@@ -4,150 +4,128 @@ layout: assignments
 title: "Assignment #1"
 due-date: Sept 18
 topic: Unix
-live: false
+live: true
 category: assignment
 
 ---
 
-## Assignment #1
-For this assignment you will be writing 3 programs which should be saved independently as their own ".py" file. The filename you should use for each program is outlined in the sections below. When you're finished you should submit your programs to the Assignment #1 category on Brightspace.
-
-For each program, remember to comment your source code as if you were describing your code to someone who may be viewing it for the first time. Also include your name, the date, your class section and the name of your program at the top of your file.
-
-You may work by yourself or with a partner. Remember, collaborating just entails discussing approaches to the problems; **you should not be writing actual code together**. If you choose to work with someone else please be sure to give them credit in your source code and on Brightspace when you submit your work.  Each member of a team must submit their own unique copy of the assignment to get credit for the assignment.
-
-Make sure that IDLE is set up to use a fixed-width font (Courier is the font that I use in class) and that your font size is set to 14pt. On a Mac you can click on IDLE->Preferences to adjust your font size; On a PC you can click on Options->Configure IDLE
-
+## Unix
+In this assignment you will create a basic Web page and publish it on a Unix server at i6.cims.nyu.edu/~netid.
 
 <div class="section-break"><br></div>
 
 
-### Problem #1: Variables & Print Statements
-Given the following variables:
+### Account Information
+In order to set up your Web page you need to log in to your i6 account. Here is the information necessary to log in to your account.
+
+Hostname: i6.cims.nyu.edu
+
+Login: *Your NYU NetID*
+
+Password: *The password given to you by Courant*  
+Your i6 account information was sent to you via email from helpdesk@cims.nyu.edu with the subject, “Welcome to Courant.” If you forget your i6 password and would like to reset it, go to this page for instructions on how to do so.
+
+Web directory: public_html  
+This is the folder on i6 accounts that will serve files to the Web. All HTML and image files should be uploaded into this folder (or its subdirectories) to be viewed on the Web. Do not delete public_html.
+
+Web page address (URL): i6.cims.nyu.edu/~netid
+
+<div class="section-break"><br></div>
+
+### Accessing i6 from the Command Line
+**Mac and Linux Computers**  
+Mac and Linux users can use Terminal to access i6 from the command line. Terminal is available in macOS via Applications > Utilities > Terminal.
+
+At the `$` prompt, type in the following—substituting netid with your NetID—and press Enter.  
+`ssh netid@i6.cims.nyu.edu`  
+
+**Windows Computers**  
+PC users can download and use [PuTTY](https://www.putty.org/), an SSH and telnet client, to access i6.
+
+Type in the name of the host which, in our case, is i6.cims.nyu.edu; select “SSH” and click “Open.” For reference, [here is a screenshot](https://cs.nyu.edu/courses/fall23/CSCI-UA.0004-004/assignments/unix/putty-i6.gif) of a PuTTY Configuration window.
+
+**Your Password**  
+Next, enter your i6 password—which is case-sensitive. The cursor does not move as you type your password, but when you press Enter you should be logged in.
+
+Once logged in, you can change your password by typing `passwd` at the prompt and following the instructions. Basic Unix commands are listed [here]({{ site.url }}{{ site.baseurl }}{{ "/resources/unix.html" }}).
+
+If you have problems logging into your i6 account, speak with your instructor as soon as possible.
+
+<div class="section-break"><br></div>
+
+### Writing Your Web Page
+Next, you need to write your page with a plain text editor. Use [Visual Studio Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com/), or [Notepad++](https://notepad-plus-plus.org/) to create a new plain text document. Type the HTML code below into the document. Then enter your name inside the `<title>` tag and a short self introduction inside the `<p>` tag.
 
 ```
-score1 = 100
-score2 = 94
-score3 = 88
-first_name = "Ada"
-last_name = "Lovelace"
-class_curve = 1.5
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Your name goes here</title>
+  </head>
+  <body>
+    <h1>Introduction to Web Design</h1>
+    <p>Your self introduction goes here</p>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Raster Graphics</li>
+      <li>Vector Graphics</li>
+      <li>Page Layout</li>
+      <li>Responsive Design</li>
+      <li>JavaScript</li>
+      <li>Final Project</li>
+    </ul>
+  </body>
+</html>
 ```
 
-Write a program that generates the following output. Ensure that your output matches the sample output exactly, including spaces. You MUST use the variables given (e.g. you can't use the numeric literal 94 in your program -- you must refer to the variable `score2`). 
+Save this file as “index.html” on your computer. View the page locally in a web browser (File > Open File) to make sure it looks as it should. This page will serve as a directory for all future assignments.
 
-Note that there is no user input required in this program.
+<div class="section-break"><br></div>
 
-```
-Grade report for: Ada Lovelace
-Individual scores: 100, 94, 88
-Average Score: 94
-Average Score with Class Curve: 95.5
-``` 
+### Publishing Your Web Page
+Next, you will use an SFTP client to transfer your “index.html” file from your computer to the i6 server.
 
-This program should be named as follows:
-LastNameFirstName_assign1_problem1.py (for example, "ZhaoEmily_assign1_problem1.py")
+[Cyberduck](https://cyberduck.io/) is a free and open-source SFTP client for Mac and Windows. Alternatives include [Transmit](https://panic.com/transmit/) and [Fetch](https://www.nyu.edu/life/information-technology/getting-started/software.html) for Mac, [WinSCP](https://winscp.net/) for Windows, and [FileZilla](https://filezilla-project.org/) for Mac, Windows, and Linux. Whatever program you use, be sure to connect to i6 using SFTP (as opposed to FTP).
 
-<div class="section-break"><br><br></div>
+Here is an example of an FTP client’s login screen. Fill it in as follows but with your own NetID and i6 password and connect using “SFTP.” After logging in, you can upload files to the web server and also download files from the server.
 
-### Problem #2: Using the print function
-Prompt the user to enter 3 names. Store each name in a separate variable. Then display the names back to the user in every possible order using the output below as a guide. Note the formatting in the output below -- make your program match the formatting exactly. 
+![](https://cs.nyu.edu/courses/fall23/CSCI-UA.0004-004/assignments/unix/sftp-login.png)
 
-```
-Please enter name #1: Allison
-Please enter name #2: Jeremy
-Please enter name #3: Emily
+Upload the index.html file from your computer to the public_html folder of your i6 account. Once you have uploaded the file, check to make sure your Web page is visible at: i6.cims.nyu.edu/~netid
 
-Here are your names in every possible order:
---------------------------------------------
+<div class="section-break"><br></div>
 
-1. Allison, Jeremy, Emily
+### Setting Permissions
+If your page is not visible when you try to access it at i6.cims.nyu.edu/~netid and you get a 403 (Forbidden) error, you may need to change who can access your site by setting its “permissions.”
 
-2. **Allison** **Emily** **Jeremy**
-
-3. Jeremy-Allison-Emily
-
-4. Jeremy
-Emily
-Allison
-
-5. Emily
-   Jeremy!
-   Allison
-
-6. ---Emily
-   ------Allison
-   ---------Jeremy
-```
-
-**Note**  
-Your program should not print out the names Allison, Jeremy and Emily -- it should print out whatever names the user decides to enter. For example, if I enter Pikachu, Charmander and Squirtle the output would change to reflect these names.
-
-This program should be named as follows:
-LastNameFirstName_assign1_problem2.py (for example, "ZhaoEmily_assign1_problem2.py")
-
-<div class="section-break"><br><br></div>
-
-### Problem #3: Math Expressions [Part A + B]
-
-*Note: This program will require the use of the `format()` function, which is introduced in [Module 2](https://cs.nyu.edu/elearning/CSCI_UA_0002/module02.php#format).*
-
-You have recently been hired by a local bakery to design a program that simplifies the conversion of recipe measurements. To help you get started, the bakery has provided you with a list of common conversions:
-
-1 ml = 0.202884 tsp   
-1 tbsp = 3 tsp  
-1 cup = 16 tbsp  
-1 pint = 2 cups  
-1 quart = 2 pints  
-1 gallon = 4 quarts  
-1 floz = 29.5735 ml  
-
-Using the formulas above, write a program that takes an initial user input in milliliters, and creates a table of all the conversions. Here's a sample run, using **250 milliliters** as an initial input: 
+Log into i6 with Terminal or PuTTY and type the following commands in this order at the Unix system prompt (represented here by the `$` sign). Be sure to type commands exactly as they are written and do not include the `$`.
 
 ```
-Enter an amount (in ML) to convert: 250.0
---------------------------------------------------------------
-                 mL to US Fluid Volume Units                  
---------------------------------------------------------------
-	ml:                     250.0
-	tsp:                    50.721000000000004
-	tbsp:                   16.907
-	cup(s):                 1.0566875
-	pint(s):                0.52834375
-	quart(s):               0.264171875
-	gallon(s):              0.06604296875
-	fl oz:                  8.453514125822105
+$ cd
+$ chmod 755 public_html
+$ cd public_html
+$ chmod 644 index.html
+$ cd
 ```
 
-While your output should match as closely as possible in terms of spacing, you do not worry about decimal point precision for this program (no numeric formatting required).
+Your page should now be accessible to you and the world.
 
+<div class="section-break"><br></div>
 
-### But! Before you write any code...
+### Submitting Your Assignment
+Submit the following via NYU Brightspace:
 
-In computer science, **pseudocode** is a plain language description of the steps in an algorithm. You can think of it as writing---first in your native language---an outline or initial draft of an essay that you will eventually have to translate to French, or Python in our case.
+- The URL to your page in the general form of i6.cims.nyu.edu/~netid/
+- The index.html file, uploaded as an attachment 
 
-**Part A**  
-Using code comments, write out your plan (aka the pseudocode), IN ENGLISH, for how you will approach creating this table. I'll get you started:
+Please note that you are required to submit files along with URLs in order to receive credit for your work.
 
-```
-# First, I will determine the width of the entire table
-# Then, I will figure out a way to center the title of the table
-# For the indentation on the left, I will...
-#
-#
-#
-# As for creating two columns, I will...
+<div class="section-break"><br></div>
 
-```
+### Grading
+This assignment will be graded as complete or incomplete.
 
-**Part B**  
- Now you can code the program, following your plan above.
- 
- Try your best to programatically figure out the spaces; I don't want to see strings defined like this:
- ```
- ml = "            ml:"
- ```
-This is known as **\"hard-coding.\"** When programming, it's best to imagine that the content might change. If I suddenly wanted to increase the left indent, I would have to go through each hardcoded variable, and manually add a space---that sounds like a lot of work! Let's try to find a way to avoid that.
- 
-
- This program should be named as follows: LastNameFirstName_assign1_problem3.py (for example, “ZhaoEmily_assign1_problem3.py”) Please include both parts A and B in the same file.
+- Studentʼs web page has been set up at the URL they provide.
+- Web page has been customized with the student’s name and self-introduction.

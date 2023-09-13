@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unix Commands</title>
+    <link rel="stylesheet" href="http://localhost:4000/CSCI-UA.004-Fall23/assets/css/styles.css">
+    <link rel="icon" type="image/ico" href="http://localhost:4000/CSCI-UA.004-Fall23/assets/images/favicon.ico?v=1">
+  </head>
+  <body>
+    <h1>Intro to Web Design & Computer Principles – Fall 2023</h1>
+    <nav>
+    <!-- <a href="/">Syllabus</a>
+    <a href="/schedule.html">Schedule + Class Notes</a>
+    <a href="/assignments.html">Assignments</a> -->
+    <!-- <div class="nav-section">
+    
+    </div> -->
+    <div class="nav-section">
+        <a href="http://localhost:4000/CSCI-UA.004-Fall23/"><span>*&nbsp;</span>Syllabus</a>
+        <a href="http://localhost:4000/CSCI-UA.004-Fall23/schedule.html"><span>*&nbsp;</span>Schedule + Notes</a>
+        <a href="http://localhost:4000/CSCI-UA.004-Fall23/assignments.html"><span>*&nbsp;</span>Assignments</a>
+        
+    </div>  
+    <div class="nav-section">
+        <a href="https://pollev.com/emilyzhao"><span>*&nbsp;</span>Poll Everywhere</a>
+        <a href="https://brightspace.nyu.edu/d2l/home/300438"><span>*&nbsp;</span>Brightspace</a>
+    </div>      
+
+</nav>
+    <h2 id="basic-unix-commands">Basic Unix Commands</h2>
+<p><br />
+<code class="language-plaintext highlighter-rouge">cd &lt;directory name&gt;</code><br />
+Change directory (e.g. cd pictures brings you to the sub-directory “pictures”)</p>
+
+<p><code class="language-plaintext highlighter-rouge">cd ..</code><br />
+Change directory up one level to the parent directory</p>
+
+<p><code class="language-plaintext highlighter-rouge">cd</code> <br />
+Return to the home directory</p>
+
+<p><code class="language-plaintext highlighter-rouge">chmod</code><br />
+Modifies the permissions on a file or directory</p>
+
+<p><code class="language-plaintext highlighter-rouge">cp &lt;current filename&gt; &lt;new file name&gt;</code><br />
+Copy (e.g. cp cats1.jpg cats2.jpg makes a copy of the picture “cats1.jpg” and calls it “cats2.jpg”)</p>
+
+<p><code class="language-plaintext highlighter-rouge">cp -i &lt;current filename&gt; &lt;new file name&gt;</code><br />
+Use cp -i to be prompted before over-writing another file. This is a safer method.</p>
+
+<p><code class="language-plaintext highlighter-rouge">ls</code><br />
+Lists a directory of your files</p>
+
+<p><code class="language-plaintext highlighter-rouge">ls -l</code><br />
+Lists a directory with more information about the files</p>
+
+<p><code class="language-plaintext highlighter-rouge">ls -a</code><br />
+Lists a directory including the hidden files</p>
+
+<p><code class="language-plaintext highlighter-rouge">man</code><br />
+This is the online Unix help documentation (as in “manual”). Type man + the command (e.g. man ls) for a detailed explanation of the command. Type q to leave the manual pages.</p>
+
+<p><code class="language-plaintext highlighter-rouge">mkdir &lt;directory name&gt;</code><br />
+Creates a new directory (e.g. mkdir pictures creates a directory called “pictures”)</p>
+
+<p><code class="language-plaintext highlighter-rouge">pico</code><br />
+Use pico <filename> to edit a text file</filename></p>
+
+<p><code class="language-plaintext highlighter-rouge">pwd</code><br />
+See the current directory and path</p>
+
+<p><code class="language-plaintext highlighter-rouge">rm &lt;filename&gt;</code><br />
+Remove (or delete) a file (e.g. rm cats1.jpg deletes the file “cats1.jpg”)</p>
+
+<p><code class="language-plaintext highlighter-rouge">rmdir &lt;directory name&gt;</code><br />
+Removes an empty directory (e.g. rmdir pictures removes a directory called “pictures” as long as that directory is empty)</p>
+
+<p><code class="language-plaintext highlighter-rouge">df -h &lt;path&gt;</code><br />
+On i6.cims.nyu.edu, use this command to check the amount of space you have left. For example, to check on a student’s folder or directory: df -h /home1/x/netid where x represents the first letter of your NetID and netid represents your directory on i6 and your netid (eg. “ab123”). For example, for user id “dd123”: df -h /home1/d/dd123.</p>
+
+<p>Note: Use the Control key + c to cancel what you’re currently doing. Use Control key + d to log out.</p>
+
+<h2 id="additional-information-on-unix">Additional Information on Unix</h2>
+<p>Unix Tutorial for Beginners: <a href="www.ee.surrey.ac.uk/Teaching/Unix">www.ee.surrey.ac.uk/Teaching/Unix</a></p>
+
+<h2 id="chmod-calculator">chmod Calculator</h2>
+<p><a href="www.javascriptkit.com/script/script2/chmodcal.shtml">www.javascriptkit.com/script/script2/chmodcal.shtml</a></p>
+
+  </body>
+</html>
