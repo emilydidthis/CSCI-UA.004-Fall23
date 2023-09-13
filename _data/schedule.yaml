@@ -18,5 +18,5 @@ schedule:
         - "Assignment #1"
         files:
         - name: operating-systems.pdf
-          path: /assets/slides/01_Website-Internet.pdf
+          path: /assets/slides/02_Unix.pdf
           type: slides
