@@ -20,3 +20,14 @@ schedule:
         - name: operating-systems.pdf
           path: /assets/slides/02_Unix.pdf
           type: slides
+  - week_number: 3
+    classes:
+      - topics: HTML
+        assigned: 
+        - "Chapter 6: Adding Links"
+	      - "Chapter 7: Adding Images"
+        - "Assignment #2"
+        files:
+        - name: HTML_day-01.pdf
+          path: assets/slides/03_HTML_Day1.pdf
+          type: slides
