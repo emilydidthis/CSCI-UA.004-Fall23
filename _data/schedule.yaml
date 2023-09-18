@@ -25,7 +25,7 @@ schedule:
       - topics: HTML
         assigned: 
         - "Chapter 6: Adding Links"
-	      - "Chapter 7: Adding Images"
+        - "Chapter 7: Adding Images"
         - "Assignment #2"
         files:
         - name: HTML_day-01.pdf
