@@ -29,5 +29,5 @@ schedule:
         - "Assignment #2"
         files:
         - name: HTML_day-01.pdf
-          path: assets/slides/03_HTML_Day1.pdf
+          path: /assets/slides/03_HTML_Day1.pdf
           type: slides
