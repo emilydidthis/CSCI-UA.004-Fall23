@@ -39,8 +39,8 @@ schedule:
         - "Chapter 11: Introducing Cascading Style Sheets"
         - "Chapter 12: Formatting Text"
         files:
-        - name: HTML_day-01.pdf
-          path: /assets/slides/03_HTML_Day1.pdf
+        - name: HTML_day-02.pdf
+          path: /assets/slides/03_HTML_Day2.pdf
           type: slides
         - name: "Download: NYC files"
           path: /assets/files/nyc-files.zip
