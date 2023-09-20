@@ -15,7 +15,7 @@ schedule:
       - topics: Unix + HTML
         assigned: 
         - "Chapter 4: Creating a Simple Page"
-        - "Assignment #1"
+        - "[Assignment #1](https://emilydidthis.github.io/CSCI-UA.004-Fall23/assignments/01.html)"
         files:
         - name: operating-systems.pdf
           path: /assets/slides/02_Unix.pdf
@@ -26,8 +26,22 @@ schedule:
         assigned: 
         - "Chapter 6: Adding Links"
         - "Chapter 7: Adding Images"
-        - "Assignment #2"
+        - "[Assignment #2](https://emilydidthis.github.io/CSCI-UA.004-Fall23/assignments/02.html)"
         files:
         - name: HTML_day-01.pdf
           path: /assets/slides/03_HTML_Day1.pdf
           type: slides
+        - name: Basic HTML Site
+          path: /assets/demos/basic-html/index.html
+          type: code
+      - topics: HTML
+        assigned: 
+        - "Chapter 11: Introducing Cascading Style Sheets"
+        - "Chapter 12: Formatting Text"
+        files:
+        - name: HTML_day-01.pdf
+          path: /assets/slides/03_HTML_Day1.pdf
+          type: slides
+        - name: "Download: NYC files"
+          path: /assets/files/nyc-files.zip
+          type: code
