@@ -32,7 +32,7 @@ schedule:
           path: /assets/slides/03_HTML_Day1.pdf
           type: slides
         - name: Basic HTML Site
-          path: /assets/demos/basic-html/index.html
+          path: /demos/basic-html/
           type: code
       - topics: HTML
         assigned: 
@@ -44,4 +44,7 @@ schedule:
           type: slides
         - name: "Download: NYC files"
           path: /assets/files/nyc-files.zip
+          type: code
+        - name: "NYC Website – HTML"
+          path: /demos/nyc-website/
           type: code
