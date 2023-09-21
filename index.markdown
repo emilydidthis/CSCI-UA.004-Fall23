@@ -56,6 +56,14 @@ Web hosting and domain names
 ## Class Format
 The class will meet twice a week for one hour and fifteen minutes. Generally, each week will consist of lecture material, class interaction, and a project-based assignment.
 
+## Exams
+### Midterm 
+Wednesday, October 25
+### Final
+Wednesday, December 20  
+2:00pm-3:50pm  
+[Room TBD](https://cs.nyu.edu/dynamic/courses/exams/?semester=fall_2023&level=UA)
+
 ## i6 Account
 In addition to your NYU Home Account, we will be using a web hosting account on a Unix server which will be assigned to you automatically based on your enrollment. This is called an [“i6” account](https://cims.nyu.edu/webapps/content/systems/resources/i6) and we will use it to host our websites. Common questions about i6 accounts are answered on this [FAQ page](https://cims.nyu.edu/webapps/content/systems/resources/i6/faq). If you forget your i6 password and would like to reset it, go to [this page](https://cims.nyu.edu/webapps/content/systems/resources/i6/resetpassword) for instructions on how to do so.
 
