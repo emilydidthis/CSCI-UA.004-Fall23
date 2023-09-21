@@ -4,7 +4,7 @@
 
 # layout: home
 layout: default
-title: Intro to Computer Programming – Fall 2022
+title: Intro to Web Design + Computer Principles - Fall 2023
 ---
 <!-- To make sure that new lines appear as new paragraphs, put two spaces at the end of every line -->
 <!-- https://stackoverflow.com/questions/15917463/embedding-markdown-in-jekyll-html -->
