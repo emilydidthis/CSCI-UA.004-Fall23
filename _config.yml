@@ -28,6 +28,7 @@ baseurl: "/CSCI-UA.004-Fall23" # the subpath of your site, e.g. /blog
 url: "https://emilydidthis.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
+brightspace: "https://brightspace.nyu.edu/d2l/home/300438"
 
 page-types: []
 # Build settings
