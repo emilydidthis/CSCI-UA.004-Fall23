@@ -30,694 +30,116 @@
 
 </nav>
     <div class="assignment-page">
-    <h2 id="assignment-9">Assignment #9</h2>
+    <h2 id="final-project">Final Project</h2>
+<p>In this assignment you will synthesize your knowledge of web design into a new, professionally-oriented website. Potential topics include a portfolio, a social cause, a small business, and an expanded résumé.</p>
 
-<h3 id="part-1">Part 1</h3>
-<p>This program relies on a series of data files. Simply right-click on the links below (control-click on a Mac) and select Save-As to save these files to your computer. Ensure that these files are stored in a folder that contains your source code file (i.e. ‘LastnameFirstname_assign9_part1.py’) for this project as well.</p>
+<div class="section-break"><br /></div>
+
+<h3 id="wireframing">Wireframing</h3>
+<p>Once you’ve decided what your professionally-oriented website will be about, write a paragraph of at least 100 words describing your topic and how it will be presented on the web.</p>
+
+<p>Next, using <a href="https://www.figma.com/design/">Figma</a>, create a page layout that represents the design of your next website. This is an opportunity for you to make design decisions before applying them with code. The layout should indicate the placement of text, images, and navigation. You need not concern yourself with specific content at this stage; instead, focus on the arrangement of compositional elements on the page. You’re welcome to use the same general layout for every page of the site; if you choose to vary the layout for different pages, create a separate wireframe for each. When you have completed your wireframe, export it as a PDF.</p>
+
+<div class="section-break"><br /></div>
+
+<h3 id="content">Content</h3>
+<p>Begin building your website by creating a new project directory for its files. Using your wireframe as a guide, code your website with semantic HTML to describe page content. Your website should consist primarily of original content; any images or text that you use from other sources should be credited accordingly.</p>
 
 <ul>
-  <li><a href="http://localhost:4000/CSCI-UA.004-Fall23/assets/text-files/class_data.txt" download="">class_data.txt</a></li>
-  <li><a href="http://localhost:4000/CSCI-UA.004-Fall23/assets/text-files/enrollment_data.txt" download="">enrollment_data.txt</a></li>
+  <li>There should be semantic text elements on each page, including but not limited to paragraph (<code class="language-plaintext highlighter-rouge">&lt;p&gt;</code>) and heading (<code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;h2&gt;</code>, etc.) text.</li>
+  <li>There should be semantic section elements on each page, including but not limited to <code class="language-plaintext highlighter-rouge">&lt;main&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;header&gt;</code>, and <code class="language-plaintext highlighter-rouge">&lt;footer&gt;</code>.</li>
+  <li>Pages should link to each other with “relative” URLs; longer pages should incorporate anchor links.</li>
+  <li>Each page should include properly formatted JPG, PNG, GIF, or SVG images.</li>
+  <li>All <code class="language-plaintext highlighter-rouge">&lt;img&gt;</code> elements should include <code class="language-plaintext highlighter-rouge">src</code>, <code class="language-plaintext highlighter-rouge">width</code>, <code class="language-plaintext highlighter-rouge">height</code>, and <code class="language-plaintext highlighter-rouge">alt</code> attributes with appropriate values.
+Responsive raster graphics should be offered in conjunction with the <code class="language-plaintext highlighter-rouge">srcset</code> attribute and, if appropriate, <code class="language-plaintext highlighter-rouge">sizes</code> attribute.</li>
 </ul>
 
-<p>You’ve been hired by NYU’s Computer Science department to create a tool that will allow professors to look up their course rosters online. Currently course registration data is stored using two different text files.</p>
+<p>Pay close attention to your HTML tags as you code them. You can also check your HTML code using the <a href="https://validator.w3.org/">W3C Markup Validation Service</a>. As a finishing touch, create and apply a 32 × 32 pixel website icon to your pages if you would like to.</p>
 
-<p><strong>class_data.txt</strong><br />
-Stores the course ID and the title of each course. There will always be one record in this file for every course that the CS department is currently offering. Here’s what this file looks like:</p>
+<div class="section-break"><br /></div>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CS0002,Introduction to Computer Programming
-CS0004,Introduction to Web Design and Computer Principles
-CS0060,Database Design and Implementation
-CS0061,Web Development
-CS0101,Introduction to Computer Science
-CS0102,Data Structures
-CS0201,Computer Systems Organization
-CS0380,Special Topics in Computer Science
-</code></pre></div></div>
-
-<p><strong>enrollment_data.txt</strong><br />
-Stores the course ID, last name and first name of each student enrolled in the course. Note that there are multiple records per course (one per student enrolled). For example, here’s the beginning of this file showing six students enrolled in CS0002:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CS0002,Hiner,Judith
-CS0002,Mcmahon,Ludivina
-CS0002,Trusty,Beatrice
-CS0002,Brinn,Jacqulyn
-CS0002,Hintzen,Floria
-CS0002,Amyx,Randolph
-</code></pre></div></div>
-
-<p>Your task is to write a program that asks the user for a course ID. The program will then determine if the course ID is valid or not – if it is not, the program can safely end. If it is valid, the program should report the full title of the course, how many students are enrolled in the course and the names of each student enrolled.</p>
-
-<p><strong>You cannot hard code your program to only work with the values contained within these files</strong>. When we test your work we will be using completely different data files that are organized in the same way as these sample files. Your program should work flawlessly using this new data.</p>
-
-<p>Here are a few sample runnings of how this program should operate:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NYU Computer Science Registration System
-Enter a course ID (i.e. CS0002, CS0004): PIKACHU
-Cannot find this course
-</code></pre></div></div>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NYU Computer Science Registration System
-Enter a course ID (i.e. CS0002, CS0004): CS0002
-The title of this class is: Introduction to Computer Programming
-The course has 6 students enrolled
-* Hiner,Judith
-* Mcmahon,Ludivina
-* Trusty,Beatrice
-* Brinn,Jacqulyn
-* Hintzen,Floria
-* Amyx,Randolph
-</code></pre></div></div>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NYU Computer Science Registration System
-Enter a course ID (i.e. CS0002, CS0004): CS0004
-The title of this class is: Introduction to Web Design and Computer Principles
-The course has 7 students enrolled
-* Woodman,Tilda
-* Schneiderman,Saran
-* Conn,Glayds
-* Cales,Edgar
-* Hiner,Judith
-* Lukens,Refugio
-* Alfrey,Jerrica
-NYU Computer Science Registration System
-Enter a course ID (i.e. CS0002, CS0004): CS0201
-The title of this class is: Computer Systems Organization
-The course has 0 students enrolled
-</code></pre></div></div>
-<p>Some hints to get you started:</p>
+<h3 id="form">Form</h3>
+<p>Create one external style sheet and link it to all of your HTML pages. Code a responsive layout for your website with CSS.</p>
 
 <ul>
-  <li>Ensure that your source code file (‘LastnameFirstname_assign9_part1.py’) is saved in a folder along with the data files linked above.</li>
-  <li>Begin by asking the user for a course name. You will need to consult with the <code class="language-plaintext highlighter-rouge">class_data.txt</code> file to check to make sure the course is valid, as well as determine the title of the course. This most likely will involve reading the file and examining each line in the file to see if the name on that line matches the name the user supplied.</li>
-  <li>Hint: How can you isolate each line in the file? What separates each line? How can you break each line apart into a list (split!)</li>
-  <li>Hint: You will need a loop to examine each line once they have been isolated. Next you will need to identify if the course name matches the user input. What separates each value on this line? You might need to split the line again to isolate these values.</li>
-  <li>If you find a valid course you will then need to interface with the <code class="language-plaintext highlighter-rouge">enrollment_data.txt</code> file to find all students enrolled in this course. The process for examining this file will be similar to the one you went through for the <code class="language-plaintext highlighter-rouge">class_data.txt</code> file.</li>
+  <li>Your style rules should specify font family and font size for paragraph and heading text as well as link states including <code class="language-plaintext highlighter-rouge">link</code>, <code class="language-plaintext highlighter-rouge">visited</code>, <code class="language-plaintext highlighter-rouge">hover</code>, and <code class="language-plaintext highlighter-rouge">active</code>.
+Add a web font to your pages with the CSS <code class="language-plaintext highlighter-rouge">@font-face</code> rule.</li>
+  <li>Use the CSS Flexible Box Layout Module (Flexbox) for arranging items along one axis and/or the CSS Grid Layout Module for the overall page structure.</li>
+  <li>The viewport should be set on all HTML pages and the CSS should include at least two <code class="language-plaintext highlighter-rouge">@media</code> queries: one to optimize the layout for different browser widths and one for the user’s preferred color scheme (i.e. dark mode).</li>
+  <li>Mobile-optimized layout should be limited to one column; desktop layout should include two or more columns.</li>
 </ul>
 
-<p>This program should be named as follows: LastNameFirstName_assign9_part1.py</p>
+<p>Allow the content of your website to guide decisions you make about its design.</p>
 
 <div class="section-break"><br /></div>
 
-<h3 id="part-2">Part 2</h3>
-<p>Note that the programs you will be writing build on one another. You will want to attempt these parts in order. You can also feel free to save all of your work in one big file (call it “LastNameFirstName_assign9_part2.py”)</p>
-
-<p>You have just been hired by a tech startup that is planning on releasing a new e-mail service to its clients. They have asked you to create a prototype of this service using your Python skills. The final version of this prototype should do the following:</p>
+<h3 id="interaction">Interaction</h3>
+<p>Using JavaScript, add custom interactivity to your website.</p>
 
 <ul>
-  <li>Allow the user to register for a new account. When they register, they will supply a username and password, which will need to be validated. The username will also need to be unique (i.e. only one person can have a given username). If the user registers successfully their information will need to be stored in a permanent storage mechanism (in this case, a file)</li>
-  <li>The user should also be able to log into their account. This part of the system will ask the user for a username and password and match it up against the one the company has on file for them. Note that the company plans on having millions of clients, so this information must be cross-referenced against a file and cannot be ‘hard-coded’.</li>
-  <li>The user should be able to send messages to any other user on the system. To send a message the system will ask the user for the name of a recipient and a message to send (one line of text). If the recipient is registered the message will be delivered through a file.</li>
-  <li>The user should be able to read messages that have been sent to them (and only them)</li>
-  <li>The user should be able to delete all of the messages that have been sent to them (and only them)</li>
+  <li>Your script should include at least two DOM queries.</li>
+  <li>There should be at least one function that is called in response to a DOM event.</li>
+  <li>The function should update page content and/or change CSS properties.</li>
 </ul>
 
-<p>In order to do this the software engineers at the company have outlined a series of functions that will need to be build to create the prototype. Your job is to build these functions and test them as you go - don’t skip ahead! When all of the necessary functions are built you will use them to construct the prototype e-mail system</p>
-<div class="section-break"><br /></div>
-
-<h3 id="part-2a">Part 2a</h3>
-<p>Begin by writing functions that conform to the following IPO specifications. Tester code is listed below each function.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># function:   valid_username
-# input:      a username (string)
-# processing: determines if the username supplied is valid.  for the purpose
-#             of this program a valid username is defined as follows:
-#             (1) must be 5 characters or longer
-#             (2) must be alphanumeric (only letters or numbers)
-#             (3) the first character cannot be a number
-# output:     boolean (True if valid, False if invalid)
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># TESTER CODE
-print( valid_username('abc123') )    # True
-print( valid_username('abcde')  )    # True
-print( valid_username('abc')    )    # False
-print( valid_username('@#$%^')  )    # False
-print( valid_username('1abcde') )    # False
-print( valid_username('')       )    # False
-</code></pre></div></div>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># function:   valid_password
-# input:      a password (string)
-# processing: determines if the password supplied is valid.  for the purpose
-#             of this program a valid password is defined as follows:
-#             (1) must be 5 characters or longer
-#             (2) must be alphanumeric (only letters or numbers)
-#             (3) must contain at least one lowercase letter
-#             (4) must contain at least one uppercase letter
-#             (5) must contain at least one number
-# output:     boolean (True if valid, False if invalid)
-</code></pre></div></div>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># TESTER CODE
-print( valid_password('Abc123')     )   # True
-print( valid_password('Abc123xyz')  )   # True
-print( valid_password('Ab12')       )   # False
-print( valid_password('abc123')     )   # False
-print( valid_password('123456')     )   # False
-print( valid_password('Abc123#')    )   # False
-print( valid_password('')           )   # False
-</code></pre></div></div>
-<div class="section-break"><br /></div>
-
-<h3 id="part-2b">Part 2b</h3>
-<p>Now that you can validate usernames and passwords it’s time to write some code that will register new user accounts. In order to do this you will need to create a file that will contain the usernames and passwords for all users of the system. This file - which you can download <a href="http://localhost:4000/CSCI-UA.004-Fall23/assets/text-files/user_info.txt" download=""><strong>here</strong></a> - is set up with five demo accounts and is organized as follows:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pikachu,Abc123
-charmander,Xyz123
-squirtle,SquirtleSquad99
-Pidgey2020,Pqr123
-fearow,Pidgey2020
-</code></pre></div></div>
-
-<p>Note that this file is organized as follows:</p>
-
-<p>The file is organized into multiple lines
-Each line represents a single user
-On each line there are two values, separated by commas. The first value (before the comma) is the username and the second value (after the comma) is the password for that user.</p>
-
-<p>The first thing you will want to do is download this file and save it in the same folder as your source code file for this program. Once this file is in place you can begin writing the following two functions:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># function:   username_exists
-# input:      a username (string)
-# processing: determines if the username exists in the file 'user_info.txt'
-# output:     boolean (True if found, False if not found)
-</code></pre></div></div>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># TESTER CODE
-print( username_exists('pikachu')           )   # True
-print( username_exists('charmander')        )   # True
-print( username_exists('squirtle')          )   # True
-print( username_exists('Pidgey2020')        )   # True
-print( username_exists('SquirtleSquad99')   )   # False
-print( username_exists('eevee')             )   # False
-print( username_exists('bobcat')            )   # False
-print( username_exists('')                  )   # False
-</code></pre></div></div>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># function:   check_password
-# input:      a username (string) and a password (string)
-# processing: determines if the username / password combination
-#             supplied matches one of the user accounts represented
-#             in the 'user_info.txt' file
-# output:     boolean (True if valid, False if invalid)
-</code></pre></div></div>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># TESTER CODE
-print( check_password('pikachu', 'Abc123')              )    # True
-print( check_password('squirtle', 'SquirtleSquad99')    )    # True
-print( check_password('fearow', 'Pqr123')               )    # False
-print( check_password('foobar', 'Hello123')             )    # False
-print( check_password('', '')                           )    # False
-</code></pre></div></div>
-<div class="section-break"><br /></div>
-
-<h3 id="part-2c">Part 2c</h3>
-<p>For this part you will be writing a function that will create new users for the system. This function should be designed as follows:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># function:   add_user
-# input:      a username (string) and a password (string)
-# processing: if the user being supplied is not already in the
-#             'user_info.txt' file they should be added, along with
-#             their password.
-# output:     boolean (True if added successfully, False if not)
-</code></pre></div></div>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># TESTER CODE
-add_user('foobar', 'abcABC123')
-add_user('barfoo', 'xyz123ABC')
-add_user('foobar', 'aTest123') # this should fail
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># OUTPUT - check 'user_info.txt' to ensure that that two new accounts have been created
-</code></pre></div></div>
-<div class="section-break"><br /></div>
-
-<h3 id="part-2d">Part 2d</h3>
-<p>Next you will need to write a function to allow users to send messages to one another. Messages will be stored in a folder named ‘messages’ which you will need to create. Your file structure should look as follows:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>assignment09/                                          (folder)
-                  LastNameFirstName_assign9_part2.py   (main program)
-                  user_info.txt                        (user database)
-                  messages/                            (folder)
-</code></pre></div></div>
-
-<p>After you have manually created this ‘messages’ folder you be able to start sending messages from one user to another. When a user is registered with the system we will create a new file in this ‘messages’ folder for that user - the name of this file will be their username with the file extension ‘.txt’ - for example, if I register an account called ‘snorlax’ a file called ‘snorlax.txt’ should be created inside of the ‘messages’ folder for this user. All messages that will be sent to this user will be stored in this file.</p>
-
-<p>Note that you can easily create, edit and read files in sub-folders by using this syntax:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>file = open('messages/somefile.txt', 'w') 	
-# opens a new file named 'somefile.txt' for writing inside of the 'messages' folder
-</code></pre></div></div>
-
-<p>Here’s the function IPO for the new function that can be used to send messages:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># function:   send_message
-# input:      a sender (string), a recipient (string) and a message (string)
-# processing: writes a new line into the specific messages file for the given users
-#             with the following information:
-#
-#             sender|date_and_time|message\n
-#
-#             for example, if you call this function using the following arguments:
-#
-#             send_message('craig', 'pikachu', 'Hello there! nice to see you!')
-#
-#             the file 'messages/pikachu.txt' should gain an additional line data
-#             that looks like the following:
-#
-#             craig|11/14/2020 12:30:05|Hello there! nice to see you!\n
-#
-#             note that you can generate the current time by doing the following:
-#
-#             import datetime
-#             d = datetime.datetime.now()
-#             month = d.month
-#             day = d.day
-#             year = d.year
-#             ... etc. for hour, minute and second
-#
-#             keep in mind that you may need to 'append' to the correct messages file
-#             since a user can receive an unlimited number of messages.  you may also
-#             need to create a new message file if one does not exist for a user.
-# output:     nothing
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># TESTER CODE
-send_message('pikachu', 'charmander', 'Hey there!')
-send_message('charmander', 'pikachu', 'Good to see you!')
-send_message('pikachu', 'charmander', 'You too, ttyl')
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># OUTPUT - two new messages files should be created - 'pikachu.txt' and 'charmander.txt'
-# each should have the following content (dates will be different, though)
-#
-# pikachu.txt
-# charmander|11/14/2020 13:37:15|Good to see you!
-#
-# charmander.txt
-# pikachu|11/14/2020 13:37:15|Hey there!
-# pikachu|11/14/2020 13:37:15|You too, ttyl
-</code></pre></div></div>
-
-<p>Once this is working as expected you should update your ‘add_user’ function so that every time a new user is added a default message is sent to that user welcoming them to the system. This message should be sent from the user account ‘admin’ and should contain the text ‘Welcome to your account!’</p>
+<p>JavaScript should be externally applied in an external .js document.</p>
 
 <div class="section-break"><br /></div>
 
-<h3 id="part-2e">Part 2e</h3>
-<p>Finally you will be writing two additional functions to complete the tools needed to write this program. The first function you will be writing will print out all messages for a specific user. Here’s the IPO for this function:</p>
+<h3 id="accessibility">Accessibility</h3>
+<p>Keep in mind that people access the web in many different ways. Build your pages in a way that creates as few barriers as possible to experiencing your site, regardless of the user’s ability or the device used to access the web. One way to test the accessibility of your site is with the browser’s <a href="https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector">accessibility inspector</a>. These tools do not necessarily catch all accessibility issues but an audit of your site should not indicate any serious issues. If it does, try to resolve them before submitting your assignment.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># function:   print_messages
-# input:      a username (string)
-# processing: prints all messages sent to the username in question.  assume you have this file named 'pikachu.txt':
-#
-#             charmander|11/14/2020 13:37:15|Hey there!
-#             charmander|11/14/2020 13:37:15|You too, ttyl
-#
-#             this function should generate the following output:
-#
-#             Message #1 received from charmander
-#             Time: 11/14/2020 13:37:15
-#             Hey there!
-#
-#             Message #2 received from charmander
-#             Time: 11/14/2020 13:37:15
-#             You too, ttyl
-# output:     no return value (simply prints the messages)
-</code></pre></div></div>
-
-<p>Once you can print messages successfully the last function you will need to write will be a function to delete all messages for a given user. The IPO for this function is as follows:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># function:   delete_messages
-# input:      a username (string)
-# processing: erases all data in the messages file for this user
-# output:     no return value
-</code></pre></div></div>
 <div class="section-break"><br /></div>
 
-<h3 id="part-2f">Part 2f</h3>
-<p>Now you are ready to write the main program for this project! Here’s what your program should do:</p>
+<h3 id="submitting-your-assignment">Submitting Your Assignment</h3>
+<p>Publish your project on the i6 web server and submit the following via <a href="https://brightspace.nyu.edu/d2l/home/300438">NYU Brightspace</a>.</p>
 
 <ul>
-  <li>Present the user with a menu of choices - login, register or quit</li>
-  <li>If they choose to quit you should immediately end the program.</li>
-  <li>If they choose to register you should prompt them for a username and a password. Ensure that the username and password are valid using your functions. Then ensure that the username has not already been taken. If all of these items are OK you can go ahead and register the user for an account and return them back to the main menu.</li>
-  <li>If they choose to login you should prompt them for a username and a password. If the username and password is correct they should be logged in. They then should receive a new menu of options (hint - user a nested ‘while’ loop for this):</li>
-  <li>Present the user with the options to read messages, send messages, delete messages or logout
-    <ul>
-      <li>If they choose to logout they should return to the main menu</li>
-      <li>If they choose to read messages you should display their messages</li>
-      <li>If they choose to delete messages you should delete all their messages</li>
-      <li>If they choose to send a message you should prompt them for a recipient username and a message. If the recipient is unknown you should reject the message. If they are known, you should send a message to that user using your function.</li>
-    </ul>
-  </li>
+  <li>The text description of your topic and website—copied and pasted in the assignment text box</li>
+  <li>PDF file(s) of your wireframe</li>
+  <li>The URL to your website on i6</li>
+  <li>A compressed archive containing all the files (HTML, CSS, JavaScript, images, and media) of your web page</li>
 </ul>
 
-<p>Here’s a sample running of the program. This program assumes that you have an empty “user_info.txt” file (no users registered) and an empty ‘messages’ folder (folder exists, but no files are stored inside of it). User input is underlined:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(l)ogin, (r)egister or (q)uit: r
-
-Register for an account
-Username (case sensitive): snorlax
-Password (case sensitive): XYZ!@#$
-Password is invalid, registration cancelled
-
-(l)ogin, (r)egister or (q)uit: r
-
-Register for an account
-Username (case sensitive): snorlax
-Password (case sensitive): Abc123
-Registration successful!
-
-(l)ogin, (r)egister or (q)uit: r
-
-Register for an account
-Username (case sensitive): caterpie
-Password (case sensitive): Xyz123
-Registration successful!
-
-(l)ogin, (r)egister or (q)uit: r
-
-Register for an account
-Username (case sensitive): snorlax
-Password (case sensitive): Hacker1
-Duplicate username, registration cancelled
-
-(l)ogin, (r)egister or (q)uit: l
-
-Log In
-Username (case sensitive): snorlax
-Password (case sensitive): Abc123
-You have been logged in successfully as snorlax
-(r)ead messages, (s)end a message, (d)elete messages or (l)ogout: r
-
-Message #1 received from admin
-Time: 11/14/2020 13:56:12
-Welcome to your account!
-
-You have been logged in successfully as snorlax
-(r)ead messages, (s)end a message, (d)elete messages or (l)ogout: s
-Username of recipient: caterpie
-Type your message: Hey there!
-Message sent!
-
-You have been logged in successfully as snorlax
-(r)ead messages, (s)end a message, (d)elete messages or (l)ogout: s
-Username of recipient: caterpie
-Type your message: How are you??
-Message sent!
-
-You have been logged in successfully as snorlax
-(r)ead messages, (s)end a message, (d)elete messages or (l)ogout: s
-Username of recipient: pikachu
-Unknown recipient
-
-You have been logged in successfully as snorlax
-(r)ead messages, (s)end a message, (d)elete messages or (l)ogout: l
-Logging out as username snorlax
-
-(l)ogin, (r)egister or (q)uit: l
-
-Log In
-Username (case sensitive): caterpie
-Password (case sensitive): Xyz123
-You have been logged in successfully as caterpie
-(r)ead messages, (s)end a message, (d)elete messages or (l)ogout: r
-
-Message #1 received from admin
-Time: 11/14/2020 13:56:30
-Welcome to your account!
-
-Message #2 received from snorlax
-Time: 11/14/2020 13:57:00
-Hey there!
-
-Message #3 received from snorlax
-Time: 11/14/2020 13:57:11
-How are you??
-
-You have been logged in successfully as caterpie
-(r)ead messages, (s)end a message, (d)elete messages or (l)ogout: s
-Username of recipient: snorlax
-Type your message: Great! How are you?
-Message sent!
-
-You have been logged in successfully as caterpie
-(r)ead messages, (s)end a message, (d)elete messages or (l)ogout: d
-Your messages have been deleted
-
-You have been logged in successfully as caterpie
-(r)ead messages, (s)end a message, (d)elete messages or (l)ogout: r
-
-No messages in your inbox
-
-You have been logged in successfully as caterpie
-(r)ead messages, (s)end a message, (d)elete messages or (l)ogout: l
-Logging out as username caterpie
-
-(l)ogin, (r)egister or (q)uit: l
-
-Log In
-Username (case sensitive): snorlax
-Password (case sensitive): Abc123
-You have been logged in successfully as snorlax
-(r)ead messages, (s)end a message, (d)elete messages or (l)ogout: r
-
-Message #1 received from admin
-Time: 11/14/2020 13:56:12
-Welcome to your account!
-
-Message #2 received from caterpie
-Time: 11/14/2020 13:57:39
-Great! How are you?
-
-You have been logged in successfully as snorlax
-(r)ead messages, (s)end a message, (d)elete messages or (l)ogout: l
-Logging out as username snorlax
-
-(l)ogin, (r)egister or (q)uit: q
-
-Goodbye!
-</code></pre></div></div>
-
-<p>Important note: your program should be able to be “re-run” after the sample code above and pick up where it left off due to the fact that relevant data is being stored in a series of permanent files on your computer. For example, the following code was run days after the original output above - note how the system is able to “pick up” where it left off after the first run.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(l)ogin, (r)egister or (q)uit: r
-
-Register for an account
-Username (case sensitive): snorlax
-Password (case sensitive): AnotherHack1
-Duplicate username, registration cancelled
-
-(l)ogin, (r)egister or (q)uit: l
-
-Log In
-Username (case sensitive): caterpie
-Password (case sensitive): Xyz123
-You have been logged in successfully as caterpie
-(r)ead messages, (s)end a message, (d)elete messages or (l)ogout: r
-
-No messages in your inbox
-
-You have been logged in successfully as caterpie
-(r)ead messages, (s)end a message, (d)elete messages or (l)ogout: s
-Username of recipient: snorlax
-Type your message: Are you still there?
-Message sent!
-
-You have been logged in successfully as caterpie
-(r)ead messages, (s)end a message, (d)elete messages or (l)ogout: l
-Logging out as username caterpie
-
-(l)ogin, (r)egister or (q)uit: l
-
-Log In
-Username (case sensitive): snorlax
-Password (case sensitive): Abc123
-You have been logged in successfully as snorlax
-(r)ead messages, (s)end a message, (d)elete messages or (l)ogout: r
-
-Message #1 received from admin
-Time: 11/14/2020 13:56:12
-Welcome to your account!
-
-Message #2 received from caterpie
-Time: 11/14/2020 13:57:39
-Great! How are you?
-
-Message #3 received from caterpie
-Time: 11/16/2020 15:59:10
-Are you still there?
-
-You have been logged in successfully as snorlax
-(r)ead messages, (s)end a message, (d)elete messages or (l)ogout: l
-Logging out as username snorlax
-
-(l)ogin, (r)egister or (q)uit: q
-
-Goodbye!
-</code></pre></div></div>
-
-<p>Note on submitting your work: please submit a ‘ZIP’ file of your work, which includes your main program, the ‘user_info.txt’ file and your ‘messages’ folder. On a Mac you can create a ‘ZIP’ file by highlighting these three files and control-clicking on them - then select ‘Compress Items’ - on a PC you can highlight these files and right-click, then select ‘Send To’ and then ‘Compressed (zipped) folder’. Please delete all files from the ‘messages’ folder before uploading your assignment. Also please delete all contents from the ‘user_info.txt’ file so that no users are registered. You should submit a ‘user_info.txt’ file, but it should be empty.</p>
+<p><em>Please note that you are required to submit files along with URLs in order to receive credit for your work.</em></p>
 
 <div class="section-break"><br /></div>
 
-<h3 id="part-3---extra-credit">Part 3 - EXTRA CREDIT</h3>
-<p>Note on opening web-based files: the program below assumes that your computer can access files using the “urllib” module. If this module does not work for you then you may have to install an additional module that will allow Python to communicate with the web. On a Mac you can simply visit your ‘Applications’ folder and find the ‘Python 3’ folder. Inside of this folder should be a program labeled ‘install certificate command’ – double click on this to install this program to your computer. On a PC you shouldn’t need to do anything. If for some reason this does not work you can <a href="http://localhost:4000/CSCI-UA.004-Fall23/assets/text-files/assignment9_image_data_files.zip" download=""><strong>download all the files here</strong></a> that are needed for this project here. Note that you should ZIP up your entire folder (including these files) when submitting your homework to Brightspace.</p>
+<h3 id="grading">Grading</h3>
+<p>This assignment is worth 15 points.</p>
 
-<p>For this assignment you will be writing an image parser which will act as a “translator” to convert a series of data files into pictures. This process is not unlike how Photoshop and other graphic design programs process digital image information.</p>
+<p><strong>Wireframing</strong></p>
+<ul>
+  <li>A paragraph of at least 100 words describing a professionally-oriented website topic (1 point)</li>
+  <li>Website wireframe of the page layout (1 point)</li>
+</ul>
 
-<p>Note that the programs you will be writing build on one another. You will want to attempt these parts in order. You can also feel free to save all of your work in one big file (call it “LastNameFirstName_assign9_part3.py”)</p>
+<p><strong>Content</strong></p>
+<ul>
+  <li>Semantic text elements on each page (0.5 point)</li>
+  <li>There should be semantic section elements on each page (1 point)</li>
+  <li>Pages should link to each other with “relative” URLs; longer pages should incorporate anchor links (1 point)</li>
+  <li>Each page should include properly formatted JPG, PNG, GIF, or SVG images; img elements should include src, width, height, and alt attributes with appropriate values (1 point)</li>
+  <li>Responsive raster graphics should be offered in conjunction with the srcset attribute and, if appropriate, sizes attribute (0.5 point)</li>
+</ul>
 
-<div class="section-break"><br /></div>
+<p><strong>Form</strong></p>
+<ul>
+  <li>One external stylesheet for the whole site; style rules should specify font family and font size for paragraph and heading text as well as link states (1.5 points)</li>
+  <li>A web font applied with the CSS <code class="language-plaintext highlighter-rouge">@font-face</code> rule (0.5 point)</li>
+  <li>The CSS Flexible Box Layout Module (Flexbox) for arranging items along one axis and/or the CSS Grid Layout Module for the overall page structure (1.5 points)</li>
+  <li>The viewport should be set on all HTML pages and the CSS should include at least two <code class="language-plaintext highlighter-rouge">@media</code> queries: one to optimize the layout for different browser widths and one for the user’s preferred color scheme (1.5 points)</li>
+  <li>Mobile-optimized layout should be limited to one column; desktop layout should include two or more columns (1 point)</li>
+</ul>
 
-<h3 id="part-3a">Part 3a</h3>
-<p>Write a program that prompts the user for the name of an image file (i.e. “image1”, “image2”, etc). Then attempt to download the data associated with the specified image from the following location:</p>
+<p><strong>Interaction</strong></p>
+<ul>
+  <li>At least two DOM queries (0.5 point)</li>
+  <li>There should be at least one function that is called in response to a DOM event (1.5 points)</li>
+  <li>The function should update page content and/or change CSS properties (1 point)</li>
+</ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://cs.nyu.edu/~kapp/python/
-</code></pre></div></div>
-<p>For example, if the user types in the name “image1” you should attempt to download data from this location. Note that you will need to add the “.txt” file extension to the string that the user enters.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://cs.nyu.edu/~kapp/python/image1.txt
-</code></pre></div></div>
-<p>The user may enter an image file that does not exist on the server (i.e. the image file “image0.txt” is not a filename that we will be using). If you cannot download for any reason you should display an “image not found” error message and end the program. Your program should not crash.</p>
-
-<p>As a review, here is the syntax for downloading a file using the urllib module in Python:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import urllib.request
-
-# define a location for our file
-url = "https://cs.nyu.edu/~kapp/python/image1.txt"
-
-# open a connection to the URL
-response = urllib.request.urlopen(url)
-
-# read data from URL as a string
-data = response.read().decode('utf-8')
-</code></pre></div></div>
-
-<p>And here are two sample runnings of this part of your program:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Enter an image filename:  image0
-Sorry, 'image0.txt' doesn't exist.
-</code></pre></div></div>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Enter an image filename:  image1
-Success!  I was able to find 'image1.txt'
-</code></pre></div></div>
-
-<div class="section-break"><br /></div>
-
-<h3 id="part-3b">Part 3b</h3>
-<p>Extend your program and write in an image “parser” that will translate data stored in an image file on the web into a picture on the user’s screen.</p>
-
-<p>Begin by testing your program using the following image file (the user should just be able to type in “image1” to run this part of your program):</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://cs.nyu.edu/~kapp/python/image1.txt
-</code></pre></div></div>
-
-<p>Once you obtain data from this file you should print it out - you will see that it contains the following information:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>500,500,0.5
-</code></pre></div></div>
-<p>This information represents the width, height and background color (in greyscale) of the desired image separated by commas. Your program should obtain this information, decode and unpack it from its string and use Turtle graphics to generate the desired image. Hint: use the string “split” method and a list!</p>
-
-<p>The image that you should generate based on the data stored in the “image1.txt” data file should appear as follows (500 x 500 image filled with a 50% grey background):</p>
-
-<p><img src="http://localhost:4000/CSCI-UA.004-Fall23/assets/images/assignment9/image1.png" alt="" /></p>
-
-<p>Note that greyscale color can be generated by using the same floating point number for the red, green and blue channels. So to fill a shape with a greyscale color you can do the following:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>greyscale = 0.25
-turtle.fillcolor(greyscale, greyscale, greyscale)
-</code></pre></div></div>
-<p>Also make use of lots of “print” statements as you go. There are a lot of “moving parts” that need to be written for this portion of the project, so it can be helpful to make sure you know what kind of data you are working with if you start to get lost or confused. Don’t attempt to do too much at once – try and break down the problem into manageable steps. Also, feel free to use any of your previously written functions if you’d like (i.e. the polygon function from the turtle graphics lecture)</p>
-
-<p>Your parser should also work with the following data files as well:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://cs.nyu.edu/~kapp/python/image1a.txt
-https://cs.nyu.edu/~kapp/python/image1b.txt
-</code></pre></div></div>
-<div class="section-break"><br /></div>
-
-<h3 id="part-3c">Part 3c</h3>
-<p>Extend your program so that it can also parse the image file that exists at the following location:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://cs.nyu.edu/~kapp/python/image2.txt
-</code></pre></div></div>
-<p>This image file contains the following data:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>500,500,0.5,50,1.0,0.75,0.50,0.25,0.00
-</code></pre></div></div>
-<p>Which represents the following:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>image width, image height, background color, pixel size, pixel 1 color, pixel 2 color, 
-pixel 3 color, pixel 4 color
-</code></pre></div></div>
-
-<p>You should start drawing pixels (i.e. squares of color) from the top left side of the image (in this case -250, 250) – be sure to use the image size when calculating where to start drawing your pixels! Once you draw a pixel you should move over to the right by the specified amount so that pixels do not overlap one another. This data file should generate the following image:</p>
-
-<p><img src="http://localhost:4000/CSCI-UA.004-Fall23/assets/images/assignment9/image2.png" alt="" /></p>
-
-<p>Note that an image file can contain a varying number of pixels. One image file may render 5 pixels like the above image, and another may render only 3. You should use the size of your list to determine how many pixels need to be generated. Note: it would be very helpful at this point to write in a “draw_box” function to draw your pixels to the screen!</p>
-
-<p>Your parser should also work with the following data files as well:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://cs.nyu.edu/~kapp/python/image2a.txt
-https://cs.nyu.edu/~kapp/python/image2b.txt
-https://cs.nyu.edu/~kapp/python/image2c.txt
-</code></pre></div></div>
-<p>Important Note on Speed: By default, the turtle graphics library will draw your image very slowly. You can speed this up by using the following technique:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># at the beginning of your program, right after you create your graphics window
-
-# tell the program to not draw any graphics to the screen - your picture will exist
-# in your computer's memory but will not be painted to the screen
-turtle.tracer(0)
-
-
-# now do all of your graphics work
-
-
-
-# at the very end of your program
-
-# tell the program to draw everything in memory onto the screen all at once
-turtle.update()
-</code></pre></div></div>
-<div class="section-break"><br /></div>
-
-<h3 id="part-3d">Part 3d</h3>
-<p>Extend your program so that it can also parse the image file that exists at the following location:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://cs.nyu.edu/~kapp/python/image3.txt
-</code></pre></div></div>
-<p>This image file contains the following data:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>500,500,0.5,50,1.0,0.90,0.80,0.70,0.60,0.50,0.40,0.30,0.20,0.10,0.00,b,0.00,0.05,0.10,
-0.15,0.20,0.25,0.30,0.35,0.40,0.45,0.50
-</code></pre></div></div>
-<p>Which represents the following:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>image width, image height, background color, pixel size, pixel 1 color, pixel 2 color, 
-pixel 3 color, pixel 4 color, ... , line break character ("b"), pixel color, pixel color, 
-pixel color, ...
-</code></pre></div></div>
-
-<p>When you encounter a line break character in your file (the string “b”) you should skip down to the next line of your image and continue drawing pixels from the left side of the screen. This is just like “word wrap” in Microsoft Word, but for pixels. The image stored in “image3.txt” should look as follows:</p>
-
-<p><img src="http://localhost:4000/CSCI-UA.004-Fall23/assets/images/assignment9/image3.png" alt="" /></p>
-
-<p>Your parser should also work with the following data files as well:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://cs.nyu.edu/~kapp/python/image3a.txt
-https://cs.nyu.edu/~kapp/python/image3b.txt
-https://cs.nyu.edu/~kapp/python/image3c.txt
-</code></pre></div></div>
-
-<p>Next, extend your program so that it can also handle images that contain color (Red, Green and Blue) images in addition to greyscale images. Image files that contain RBG color values have a special “color mode” flag at position 4 (see below). They also contain 3 color values per pixel – the first one maps to the redness of the pixel, the second one maps to the greenness and the third maps to the blueness.</p>
-
-<p>Here’s a sample file that contains color values:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>640,480,0.5,10,true,0.11,0.20,0.30,0.10,0.20,0.10,0.50,0.60,0.90,b
-</code></pre></div></div>
-
-<p>And here are a few sample images along with their solutions. Note that to get full credit for the extra credit your program must handle BOTH black and white and RGB color images (i.e. I should be able to ask your program to display image3.txt as well as image4.txt and both should render correctly)</p>
-
-<p><img src="http://localhost:4000/CSCI-UA.004-Fall23/assets/images/assignment9/image4.png" alt="" /><br />
-<em>https://cs.nyu.edu/~kapp/python/image4.txt</em></p>
-
-<p><br /></p>
-
-<p><img src="http://localhost:4000/CSCI-UA.004-Fall23/assets/images/assignment9/image4a.png" alt="" /><br />
-<em>https://cs.nyu.edu/~kapp/python/image4a.txt</em></p>
-
-<p><br /></p>
-
-<p><img src="http://localhost:4000/CSCI-UA.004-Fall23/assets/images/assignment9/image4b.png" alt="" /><br />
-<em>https://cs.nyu.edu/~kapp/python/image4b.txt</em></p>
+<p><em>Points may be deducted for improperly formed HTML elements, CSS style rules, or JavaScript, as well as obvious accessibility issues.</em></p>
 
     
 </div>
