@@ -46,7 +46,7 @@ schedule:
           path: /assets/files/nyc-files.zip
           type: code
         - name: "NYC Website – HTML"
-          path: /demos/nyc-website/
+          path: /demos/nyc-website/html-only/
           type: code
   - week_number: 4
     classes:
@@ -62,3 +62,7 @@ schedule:
         - name: HTML Errors
           path: /demos/errors.html
           type: code
+        - name: "NYC Website - CSS"
+          path: /demos/nyc-website/
+          type: code
+        
