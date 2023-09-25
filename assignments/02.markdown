@@ -59,9 +59,9 @@ This assignment is worth 10 points.
 - A new website of at least three pages about the student. (3 points)
 - Website should be in its own subdirectory called “me” and the home page should be an “index.html” file. (1 point)
 - Each page should include semantic text elements, including both paragraph and heading text. (1 point)
-- Pages should link to each other with relative URLs; each page should also include an absolute URL linking to an external website; and the assignments directory should link to the home page of the “me” website. (2 points)
-- Each page should include at least one image in JPG, PNG, GIF, or SVG format; all image elements should include src, width, height, and alt attributes with appropriate values. (1 point)
-- At least one of the new pages should include an ordered, unordered, or description list (1 point)
-- There should be semantic section elements on each page, including `<main>`, `<header>`, and `<footer>`. (1 point)
+- Pages should link to each other with relative URLs; each page should also include an absolute URL linking to an external website; and the [assignments directory]({{ site.url }}{{ site.baseurl }}/assignments/01.html#writing-your-web-page) should link to the home page of the “me” website. (2 points)
+- Each page should include at least one image in JPG, PNG, GIF, or SVG format; all image elements should include `src`, `width`, `height`, and `alt` attributes with appropriate values. (1 point)
+- At least one of the new pages should include an [ordered, unordered, or description list]({{ site.url }}{{ site.baseurl }}/resources/lists.html) (1 point)
+- There should be semantic section elements on each page, including but not limited to `<main>`, `<header>`, and `<footer>`. (1 point)
 
 Points may be deducted for improperly formed HTML elements.
