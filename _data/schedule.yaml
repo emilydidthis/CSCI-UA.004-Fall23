@@ -48,3 +48,17 @@ schedule:
         - name: "NYC Website – HTML"
           path: /demos/nyc-website/
           type: code
+  - week_number: 4
+    classes:
+      - topics: CSS
+        assigned: 
+        - "Chapter 13: Colors and Backgrounds"
+        - "Chapter 14: Thinking Inside the Box"
+        - "[Assignment #3](https://emilydidthis.github.io/CSCI-UA.004-Fall23/assignments/03.html)"
+        files:
+        - name: CSS_day-01.pdf
+          path: /assets/slides/04_CSS_Day1.pdf
+          type: slides
+        - name: HTML Errors
+          path: /demos/errors.html
+          type: code
