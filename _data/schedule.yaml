@@ -65,4 +65,20 @@ schedule:
         - name: "NYC Website - CSS"
           path: /demos/nyc-website/
           type: code
+      - topics: CSS
+        assigned: "Chapter 15: Floating and Positioning"
+        files:
+        - name: CSS_day-02.pdf
+          path: /assets/slides/04_CSS_Day2.pdf
+          type: slides
+        - name: Box Model
+          path: /demos/box-model/
+          type: file
+        - name: Root Practice Folder
+          path: /assets/files/root.zip
+          type: code
+        - name: "NYC Website - CSS File"
+          path: /assets/files/main.css
+          type: code
+        
         
