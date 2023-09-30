@@ -74,6 +74,9 @@ schedule:
         - name: Box Model
           path: /demos/box-model/
           type: code
+        - name: Website with Links
+          path: /demos/link-reference/
+          type: code
         - name: "Download: Root Practice Folder"
           path: /assets/files/root.zip
           type: download
