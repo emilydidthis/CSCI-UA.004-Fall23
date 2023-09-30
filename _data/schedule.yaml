@@ -42,12 +42,12 @@ schedule:
         - name: HTML_day-02.pdf
           path: /assets/slides/03_HTML_Day2.pdf
           type: slides
-        - name: "Download: NYC files"
-          path: /assets/files/nyc-files.zip
-          type: code
         - name: "NYC Website – HTML"
           path: /demos/nyc-website/html-only/
           type: code
+        - name: "Download: NYC files"
+          path: /assets/files/nyc-files.zip
+          type: download
   - week_number: 4
     classes:
       - topics: CSS
@@ -73,12 +73,12 @@ schedule:
           type: slides
         - name: Box Model
           path: /demos/box-model/
-          type: file
-        - name: Root Practice Folder
+          type: code
+        - name: "Download: Root Practice Folder"
           path: /assets/files/root.zip
-          type: code
-        - name: "NYC Website - CSS File"
+          type: download
+        - name: "Download: NYC Website - CSS File"
           path: /assets/files/main.css
-          type: code
+          type: download
         
         

@@ -152,7 +152,7 @@ nav a:not(.nav-current):hover span {
 }
 
 .topics {
-  width: 35%;
+  width: 25%;
 }
 
 .assigned {
@@ -160,7 +160,7 @@ nav a:not(.nav-current):hover span {
 }
 
 .materials {
-  width: 15%;
+  width: 25%;
 }
 .materials a {
   display: block;

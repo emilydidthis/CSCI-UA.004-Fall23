@@ -49,7 +49,9 @@ title: Schedule + Class Notes
 
 {% for file in class.files %}
 {% if file.type == "code" %}
-<a href="{{ site.url }}{{ site.baseurl }}{{ file.path }}" >`{{ file.name }}`</a>
+  <a href="{{ site.url }}{{ site.baseurl }}{{ file.path }}" >`{{ file.name }}`</a>
+{% elsif file.type == "download" %}
+  <a href="{{ site.url }}{{ site.baseurl }}{{ file.path }}" >*{{ file.name }}*</a>
 {% else %}
   <a href="{{ site.url }}{{ site.baseurl }}{{ file.path }}" >{{ file.name }}</a>
 {% endif %}

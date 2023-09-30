@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+strong {
+  font-weight: 600;
+}
+
+h1 {
+  font-family: IBM Plex Sans;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+h2, h3 {
+  font-size: 16px;
+  padding-bottom: 5px;
+  padding-left: 15px; /* creates seamless line between h2 and p (versus using margin) */
+}
+
+h2 {
+  margin-top: 30px;
+  border-left: 2px solid #1d97b0;
+}
+
+h2 ~ ol {
+  border-left: 2px solid #1d97b0;
+  padding-left: 35px;
+}
+
+h3 {
+  padding-bottom: 0px;
+}
+
+h2 ~ p { /* General sibling combinator */
+  border-left: 2px solid #1d97b0;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 16px;
+  margin-left: 15px;
+  border-left: 2px solid #72d1e4;
+  /* two shadows to create a 2px left outline */
+  box-shadow: -13px 0 0 #232323, -15px 0 0 #1d97b0;
+}
+
+h3 + p { /* General sibling combinator */
+  border-left: 2px solid #72d1e4;
+  margin-left: 15px;
+  padding-left: 15px;
+  box-shadow: -13px 0 0 #232323, -15px 0 0 #1d97b0;
+}
+
+body {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  margin: 40px;
+  line-height: 125%;
+  background-color: #232323;
+  color: rgb(244, 244, 244);
+}
+
+body a {
+  color: #B99FFF;
+  text-decoration: none;
+}
+
+nav {
+  margin: 20px 0px;
+  display: block;
+  display: flex;
+  /* links hovered over that are not the current nav item */
+}
+nav a {
+  color: rgb(244, 244, 244);
+  font-weight: 500;
+  display: block;
+}
+nav .section-days {
+  font-weight: 500;
+}
+nav a:active {
+  color: #551A8B;
+}
+nav li {
+  display: block;
+}
+nav .nav-section {
+  margin-right: 70px;
+}
+nav span {
+  display: none;
+}
+nav a:not(.nav-current):hover span {
+  display: inline-block;
+}
+
+.nav-current::before {
+  content: "* ";
+}
+
+/* LAYOUT */
+.syllabus, .assignments, .week {
+  display: flex;
+}
+
+.syllabus .column-1 {
+  width: 35%;
+  padding-right: 50px;
+}
+.syllabus .column-2 {
+  width: 55%;
+}
+
+.assignments .column-1 {
+  width: 50%;
+  padding-right: 50px;
+}
+.assignments .column-2 {
+  width: 50%;
+}
+
+.week {
+  border-left: 2px solid #1d97b0;
+}
+.week h3, .week p {
+  box-shadow: 0 0 0;
+  border-left: 0;
+  padding-left: 0;
+}
+.week p {
+  margin-left: 15px;
+}
+.week h3 {
+  padding-top: 15px;
+}
+.week ul {
+  padding-left: 35px;
+}
+.week .week-column {
+  margin-left: 15px;
+  border-left: 2px solid #72d1e4;
+}
+.week h3 {
+  display: none;
+}
+
+.topics {
+  width: 25%;
+}
+
+.assigned {
+  width: 40%;
+}
+
+.materials {
+  width: 25%;
+}
+.materials a {
+  display: block;
+  padding: 5px 0px;
+}
+
+.assignment-page {
+  width: 70%;
+  min-width: 850px;
+  border-left: 2px solid #1d97b0 h1, h2, h3, p;
+  border-left-border-left: none;
+  border-left-box-shadow: none;
+  border-left-padding-left: 0;
+  border-left-margin-left: 0;
+}
+.assignment-page h3 ~ p {
+  border-left: 2px solid #72d1e4;
+  margin-left: 15px;
+  padding: 5px 15px;
+  box-shadow: -13px 0 0 #232323, -15px 0 0 #1d97b0;
+}
+.assignment-page ul:not(ul ul) {
+  border-left: 2px solid #72d1e4;
+  margin-left: 15px;
+  padding: 5px 30px;
+  box-shadow: -13px 0 0 #232323, -15px 0 0 #1d97b0;
+}
+.assignment-page ul ul {
+  padding-left: 15px;
+}
+.assignment-page img {
+  width: 60%;
+}
+.assignment-page .highlight:not(pre) {
+  border-left: 2px solid #72d1e4;
+  /* two shadows to create a 2px left outline */
+  box-shadow: -13px 0 0 #232323, -15px 0 0 #1d97b0;
+  margin: 0px 15px;
+  padding: 15px 0px;
+  white-space: pre-wrap;
+}
+.assignment-page pre {
+  background-color: #000000;
+  padding: 10px;
+  margin-left: 15px;
+  white-space: pre-wrap;
+}
+.assignment-page .section-break {
+  box-shadow: -13px 0 0 #232323, -15px 0 0 #1d97b0;
+  border-left: none;
+  margin-left: 15px;
+}
+
+code:not(pre code) {
+  background-color: #000000;
+  padding: 3px;
+  font-weight: 500;
+}
+
+.table pre, .table code {
+  background-color: #000000;
+  font-family: IBM Plex Sans;
+  padding: 0px;
+}
+
+@media only screen and (max-width: 900px) {
+  .syllabus, .assignments, .week {
+    flex-direction: column;
+  }
+  .syllabus .column-1, .syllabus .column-2, .assignments .column-1, .assignments .column-2, .week .column-1, .week .column-2 {
+    width: 100%;
+  }
+  .week h3 {
+    display: block;
+  }
+  .week .topics, .week .assigned, .week .materials {
+    width: 100%;
+  }
+  .assignment-page {
+    min-width: auto;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  body {
+    margin: 20px;
+  }
+  nav {
+    display: block;
+  }
+  nav .nav-section {
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=main.css.map */
