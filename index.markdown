@@ -58,7 +58,7 @@ The class will meet twice a week for one hour and fifteen minutes. Generally, ea
 
 ## Exams
 ### Midterm 
-Wednesday, October 25
+Monday, October 23
 ### Final
 Wednesday, December 20  
 2:00pm-3:50pm  

@@ -23,6 +23,7 @@ title: Schedule + Class Notes
 {% assign class_num = class_num | plus: 1 %}
 <div class="week" markdown="1">
 
+<!--------------------- TOPICS --------------------------->
 <div class="week-column topics" markdown="1">
 
 ### Topics
@@ -32,6 +33,8 @@ title: Schedule + Class Notes
 
 </div>
 
+<!--------------------- ASSIGNED --------------------------->
+{% if class.assigned[0].size > 0 %} <!-- only create div if there is content-->
 <div class="week-column assigned" markdown="1">
 
 ### Assigned
@@ -41,7 +44,10 @@ title: Schedule + Class Notes
 {% endfor%}
 
 </div>
+{% endif %}
+<!--------------------- MATERIALS --------------------------->
 
+{% if class.files[0].name.size > 1 %} <!-- only create div if there is content-->
 <div class="week-column materials" markdown="1">
 
 ### Materials
@@ -57,8 +63,8 @@ title: Schedule + Class Notes
 {% endif %}
 {% endfor %}
 
-</div>
-
+ </div> <!-- end of Materials -->
+{% endif %}
 </div>
 <br> 
 

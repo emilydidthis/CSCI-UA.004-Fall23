@@ -3,9 +3,8 @@ schedule:
   - week_number: 1
     classes: 
       - topics: Introduction + Overview
-        assigned: |
-          *Learning Web Design*  
-          Chapter 2: How the Web Works
+        assigned:
+        - "Chapter 2: How the Web Works"
         files:
         - name: what-is-the-internet.pdf
           path: /assets/slides/01_Website-Internet.pdf
@@ -66,7 +65,8 @@ schedule:
           path: /demos/nyc-website/
           type: code
       - topics: CSS
-        assigned: "Chapter 15: Floating and Positioning"
+        assigned: 
+        - "Chapter 15: Floating and Positioning"
         files:
         - name: CSS_day-02.pdf
           path: /assets/slides/04_CSS_Day2.pdf
@@ -83,5 +83,158 @@ schedule:
         - name: "Download: NYC Website - CSS File"
           path: /assets/files/main.css
           type: download
-        
-        
+  - week_number: 5
+    classes:
+      - topics: CSS
+        assigned: 
+        # - "Chapter 23: Web Image Basics"
+        files:
+        - name: 
+          path: 
+          type: 
+      - topics: Raster Graphics
+        assigned: 
+        files:
+        - name: 
+          path: 
+          type:
+  - week_number: 6
+    classes:
+      - topics: Raster Graphics
+        assigned: 
+        files:
+        - name: 
+          path: 
+          type: 
+      - topics: Vector Graphics
+        assigned: 
+        files:
+        - name: 
+          path: 
+          type:         
+  - week_number: 7
+    classes:
+      - topics: Vector Graphics
+        assigned: 
+        files:
+        - name: 
+          path: 
+          type: 
+      - topics: Review
+        assigned: 
+        files:
+        - name: 
+          path: 
+          type:           
+  - week_number: 8
+    classes:
+      - topics: Midterm Exam
+        assigned: 
+        files:
+        - name: 
+          path: 
+          type: 
+      - topics: Design + Accessibility
+        assigned: 
+        files:
+        - name: 
+          path: 
+          type:   
+  - week_number: 9
+    classes:
+      - topics: Page Layout
+        assigned: 
+        files:
+        - name: 
+          path: 
+          type: 
+      - topics: Page Layout
+        assigned: 
+        files:
+        - name: 
+          path: 
+          type:   
+  - week_number: 10
+    classes:
+      - topics: Responsive Design
+        assigned: 
+        files:
+        - name: 
+          path: 
+          type: 
+      - topics: Responsive Design
+        assigned: 
+        files:
+        - name: 
+          path: 
+          type:   
+  - week_number: 11
+    classes:
+      - topics: Javascript
+        assigned: 
+        files:
+        - name: 
+          path: 
+          type: 
+      - topics: Javascript
+        assigned: 
+        files:
+        - name: 
+          path: 
+          type:
+  - week_number: 12
+    classes:
+      - topics: Javascript
+        assigned: 
+        files:
+        - name: 
+          path: 
+          type: 
+      - topics: "*Thanksgiving Recess*"
+        assigned: 
+        files:
+        - name: 
+          path: 
+          type:      
+  - week_number: 13
+    classes:
+      - topics: Forms
+        assigned: 
+        files:
+        - name: 
+          path: 
+          type: 
+      - topics: Web Audio + Video
+        assigned: 
+        files:
+        - name: 
+          path: 
+          type:   
+  - week_number: 14
+    classes:
+      - topics: Version Control
+        assigned: 
+        files:
+        - name: 
+          path: 
+          type: 
+      - topics: Web Design Workshop
+        assigned: 
+        files:
+        - name: 
+          path: 
+          type:
+  - week_number: 15
+    classes:
+      - topics: Web Hosting + Domain Names
+        assigned: 
+        files:
+        - name: 
+          path: 
+          type: 
+      - topics: Review
+        assigned: 
+        files:
+        - name: 
+          path: 
+          type:      
