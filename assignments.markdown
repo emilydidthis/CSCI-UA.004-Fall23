@@ -43,6 +43,7 @@ Assignments that you turn in should be your own work. It’s fine to talk to oth
         <h2>{{ page.title }}</h2>
         {% endif %}  
         <p><strong>{{ page.topic }}</strong></p>
+        <!-- <p>Assignment date: {{ page.assign-date}}</p> -->
         <p>Due date: {{ page.due-date}}</p>
     {% endif %}      
 {% endfor %}

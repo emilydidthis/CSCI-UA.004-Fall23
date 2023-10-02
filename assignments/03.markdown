@@ -2,7 +2,7 @@
 
 layout: assignments
 title: "Assignment #3"
-due-date: Oct 7
+due-date: Oct 4
 topic: CSS
 live: true
 
@@ -20,12 +20,12 @@ Here is a list of required elements to include for the [assignments home page]({
 
 Here is a list of required elements to include for the website about [you]({{ site.url }}{{ site.baseurl }}/assignments/02.html).
 
-Create one external style sheet (.css document) with at least six different [CSS rule sets](https://www.w3schools.com/css/css_syntax.asp) and link it to all of your original HTML pages, about you.
+- Create one external style sheet (.css document) with at least six different [CSS rule sets](https://www.w3schools.com/css/css_syntax.asp) and link it to all of your original HTML pages, about you.
 - Your style rules should specify font family and font size for paragraph and heading text, and link states including `link`, `visited`, `hover`, and `active`.
-- You should specify a background image and/or background color for your pages and style some other aspect of the CSS box model, such as border, margin, or padding.
+- You should specify a [background image](https://www.w3schools.com/cssref/pr_background-image.php) and/or [background color](https://www.w3schools.com/cssref/pr_background-color.php) for your pages and style some other aspect of the [CSS box model](https://www.w3schools.com/css/css_boxmodel.asp), such as border, margin, or padding.
 - Create two or more class attributes somewhere in your HTML that are targeted and styled with CSS.
 - Create an id attribute somewhere in your HTML that is targeted and styled with CSS.
-- Use CSS flexbox to arrange items along one axis—such as menu bars, paragraphs of text, and/or images.
+- Use [CSS flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox) to arrange items along one axis—such as menu bars, paragraphs of text, and/or images.
 
 
 Beyond these requirements, feel free to include additional CSS to design your pages as you like. Remember to test your pages locally in the web browser as you proceed.
@@ -55,9 +55,9 @@ This assignment is worth 10 points.
 - The assignments home page should include two or more different inline style rules—as style attributes of HTML elements. (1 point)
 - One external style sheet (.css document) with at least six different CSS rule sets, linked to all of the student's “about me” pages from the HTML assignment. (3 points)
 - Style rules should specify font family and font size for paragraph and heading text, and link states: `link`, `visited`, `hover`, and `active`. (1 point)
-- A background image and/or background color should be specified for the pages. Some other aspect of the CSS box model, such as border, margin, or padding, should also be styled. (1 point)
+- A [background image](https://www.w3schools.com/cssref/pr_background-image.php) and/or [background color](https://www.w3schools.com/cssref/pr_background-color.php) should be specified for the pages. Some other aspect of the [CSS box model](https://www.w3schools.com/css/css_boxmodel.asp), such as border, margin, or padding, should also be styled. (1 point)
 - Two or more HTML class attributes, targeted and styled with CSS (1 point)
 - An HTML id attribute, targeted and styled with CSS (1 point)
-- CSS flexbox is applied to arrange items along one axis (1 point)
+- [CSS flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox) is applied to arrange items along one axis (1 point)
 
 *Points may be deducted for improperly formed HTML or CSS.*
