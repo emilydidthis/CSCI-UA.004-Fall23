@@ -68,8 +68,8 @@ schedule:
         assigned: 
         - "Chapter 15: Floating and Positioning"
         files:
-        - name: CSS_day-02.pdf
-          path: /assets/slides/04_CSS_Day2.pdf
+        - name: Paths_Review.pdf
+          path: /assets/slides/04_Paths_Review.pdf
           type: slides
         - name: Box Model
           path: /demos/box-model/
@@ -87,11 +87,14 @@ schedule:
     classes:
       - topics: CSS
         assigned: 
-        # - "Chapter 23: Web Image Basics"
+        - "Chapter 23: Web Image Basics"
         files:
-        - name: 
-          path: 
-          type: 
+        - name: CSS_day-02.pdf
+          path: /assets/slides/04_CSS_Day2.pdf 
+          type: slides
+        - name: "Download: Flexbox Files"
+          path: /assets/files/flexbox.zip 
+          type: download
       - topics: Raster Graphics
         assigned: 
         files:
