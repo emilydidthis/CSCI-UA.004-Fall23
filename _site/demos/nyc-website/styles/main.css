@@ -36,55 +36,68 @@ table {
 
 /* ------------ Day 02 ------------ */
 
+body {
+    background-color: white;
+    background-image: url(../images/nyc-seal.png);
+    background-repeat: no-repeat;
+    background-size: 125px 125px;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+}
 
 
+.nyc {
+    text-transform: uppercase;
+}
 
+.even {
+    background-color: lightgray;
+}
 
+.odd {
+    background-color: white;
+}
 
+ul {
+    list-style: none;
+    padding-left: 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+main {
+    margin-top: 90px;
+}
 
 
 /* ------------ More Box Model ------------ */
-/* #population {
+#population {
     border-top: 1px solid orange;
     margin-top: 30px;
-} */
+}
 
-/* footer {
+footer {
     padding-top: 10px;
     padding-bottom: 10px;
-} */
+}
 
-/* p, ul, td {
+p, ul, td {
     font-size: 1em;
     line-height: 1.4em;
-} */
+}
 
-/* th {
+th {
     height: 2.8em;
-} */
+}
 
-/* td {
+td {
     padding: 8px;
-} */
+}
 
-/* #credit {
+#credit {
     font-size: .7em;
     text-align: center;
-} */
+}

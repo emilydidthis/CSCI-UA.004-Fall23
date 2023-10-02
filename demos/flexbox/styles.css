@@ -1,0 +1,37 @@
+/* ----- STYLING FOR THE DIVS -----   */
+.flex-container{
+    /* background-color: pink; */
+    border: 5px solid black;
+    width: 500px;
+    height: 500px;
+}
+
+.flex-item{
+    background-color: palevioletred;
+    border: 5px solid darkred;
+    width: 100px;
+    height: 100px;
+}
+
+/* -----  ACTUAL FLEXBOX IMPLEMENTATION -----   */
+.flex-container {
+   display: flex;
+   flex-direction: row; /* defines main axis */
+   justify-content: flex-start; /* main axis */
+   align-items: flex-start; /* cross axis */
+   
+   /* Align items and flex wrap can get complicated and cancel each other out. */
+   /* For a VERY detailed explanation: https://stackoverflow.com/questions/42613359/how-does-flex-wrap-work-with-align-self-align-items-and-align-content */
+   
+   /* flex-wrap: wrap; */
+   align-content: space-between;  /* gaps between vertically*/
+   gap: 0; /* gaps between horizontally */
+}
+
+.item-1 {
+    /* flex-grow: 1; 
+    flex-shrink: 5;
+    flex-basis: 300px; */
+    /* flex: 1; */ /* combines the above 3 */
+    align-self: center; /* overwrites the cross axis alignment in the parent container */
+}
