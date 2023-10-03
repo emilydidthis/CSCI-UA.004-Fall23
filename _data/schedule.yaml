@@ -92,15 +92,18 @@ schedule:
         - name: CSS_day-02.pdf
           path: /assets/slides/04_CSS_Day2.pdf 
           type: slides
+        - name: "Download: Flexbox Files"
+          path: /assets/files/flexbox.zip 
+          type: download
         - name: "Floating Images"
           path: https://codepen.io/emilydidthis/pen/vYvzxmp
           type: external code
         - name: "Flexbox Site"
           path: https://codepen.io/emilydidthis/pen/zYyJZxG?editors=1100
           type: external code
-        - name: "Download: Flexbox Files"
-          path: /assets/files/flexbox.zip 
-          type: download
+        - name: Final NYC Site
+          path: /demos/nyc-website/
+          type: code
       - topics: Raster Graphics
         assigned: 
         files:
