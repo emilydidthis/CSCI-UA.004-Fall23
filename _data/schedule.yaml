@@ -105,7 +105,8 @@ schedule:
           path: /demos/nyc-website/
           type: code
       - topics: Raster Graphics
-        assigned: 
+        assigned:
+        - "Chapter 24: Image Asset Production" 
         files:
         - name: RasterGraphics_Day1.pdf
           path: /assets/slides/05_RasterGraphics_Day1.pdf 
