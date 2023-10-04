@@ -107,9 +107,21 @@ schedule:
       - topics: Raster Graphics
         assigned: 
         files:
-        - name: 
-          path: 
-          type:
+        - name: RasterGraphics_Day1.pdf
+          path: /assets/slides/05_RasterGraphics_Day1.pdf 
+          type: slides
+        - name: Adobe Photoshop Free Trial
+          path: https://www.adobe.com/products/photoshop/free-trial-download.html
+          type: external code
+        - name: LaGuardia Student Technology Center
+          path: https://www.nyu.edu/life/information-technology/teaching-and-learning-services/studios-and-computing-labs/student-technology-centers-computer-labs/laguardia.html
+          type: external code
+        - name: GNU Image Manipulation Program (GIMP)
+          path: https://www.gimp.org/
+          type: external code
+        - name: "Download: Cheeto Cat"
+          path: /assets/files/cheeto-cat.zip
+          type: download
   - week_number: 6
     classes:
       - topics: Raster Graphics
