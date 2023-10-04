@@ -106,7 +106,9 @@ schedule:
           type: code
       - topics: Raster Graphics
         assigned:
-        - "Chapter 24: Image Asset Production" 
+        - "Chapter 24: Image Asset Production"
+        - <a href="https://youtu.be/_L_MMU22bAw?si=yNP4I4ZggVMFo9lm">GIMP in Less Than 10 Minutes</a>
+        - <a href="https://youtu.be/r1mwj8AH98Y?si=MfLS0Ja3HkLozV1x">Photoshop Tutorial for Beginners</a> 
         files:
         - name: RasterGraphics_Day1.pdf
           path: /assets/slides/05_RasterGraphics_Day1.pdf 
@@ -120,8 +122,11 @@ schedule:
         - name: GNU Image Manipulation Program (GIMP)
           path: https://www.gimp.org/
           type: external code
-        - name: "Download: Cheeto Cat"
+        - name: "Download: Cheeto Cat Files"
           path: /assets/files/cheeto-cat.zip
+          type: download
+        - name: "Download: cheeto-cat.psd"
+          path: /assets/files/cheeto-cat.psd
           type: download
   - week_number: 6
     classes:
