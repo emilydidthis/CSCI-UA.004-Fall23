@@ -1,0 +1,19 @@
+body {
+    /* background-color: red; */
+    background-image: url(images/moonscape.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+img {
+    position: fixed;
+    left: 40%;
+    bottom: 5px;
+}
+
+h1 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}

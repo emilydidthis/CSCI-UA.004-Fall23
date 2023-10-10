@@ -144,6 +144,9 @@ schedule:
         - name: "Download: Moon Skater Files"
           path: /assets/files/moon-skater.zip
           type: download
+        - name: "Moon Skater Site"
+          path: /demos/moon-skater/
+          type: code
         - name: CSS Positioning
           path: https://developer.mozilla.org/en-US/docs/Web/CSS/position
           type: external code
