@@ -109,7 +109,7 @@ schedule:
         - "Chapter 24: Image Asset Production"
         - <a href="https://youtu.be/_L_MMU22bAw?si=yNP4I4ZggVMFo9lm">GIMP in Less Than 10 Minutes</a>
         - <a href="https://youtu.be/r1mwj8AH98Y?si=MfLS0Ja3HkLozV1x">Photoshop Tutorial for Beginners</a> 
-         - "[Assignment #4](https://emilydidthis.github.io/CSCI-UA.004-Fall23/assignments/04.html)"
+        - "[Assignment #4](https://emilydidthis.github.io/CSCI-UA.004-Fall23/assignments/04.html)"
 
         files:
         - name: RasterGraphics_Day1.pdf
