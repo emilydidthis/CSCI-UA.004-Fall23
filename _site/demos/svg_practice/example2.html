@@ -6,11 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Example 2</title>
     <style>
-    
+        body {
+            background-color: black;
+        }
+        svg {
+            width: 400px;
+            height: auto;
+            fill: white;
+        }
+
+        polygon:hover{
+            fill:yellow;
+        }
+        polygon:active{
+            fill: cyan;
+        }
+
     </style>
     
 </head>
 <body>
+    <svg viewBox="0 0 100 100">
+        <polygon points="100,0 20,40 50,60 0,100 80,60 50,40 100,0"></polygon>
+    </svg>
     
 </body>
 </html>
