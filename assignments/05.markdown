@@ -4,7 +4,7 @@ layout: assignments
 title: "Assignment #5"
 due-date: Oct 18 
 topic: Vector Graphics
-live: false
+live: true
 
 ---
 

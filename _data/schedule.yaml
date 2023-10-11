@@ -152,10 +152,11 @@ schedule:
           type: external code
       - topics: Vector Graphics
         assigned: 
+        - <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial"> MDN web docs – SVG Tutorial</a>
         files:
-        - name: 
-          path: 
-          type:         
+        - name: VectorGraphics_Day1.pdf
+          path: /assets/slides/06_VectorGraphics_Day1.pdf 
+          type: slides         
   - week_number: 7
     classes:
       - topics: Vector Graphics
