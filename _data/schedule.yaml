@@ -175,17 +175,20 @@ schedule:
     classes:
       - topics: Vector Graphics
         assigned:
-        - "Come in with questions for the review" 
+        - "Come in with questions for the review"
+        - <a href="https://www.youtube.com/watch?v=3NBKRywEbNs">Adobe Illustrator for Beginners (10 min)</a>
+        - <a href="https://www.youtube.com/watch?v=-_KJZPOYBeA">InkScape Tutorial for Beginners (11 min)</a>  
+         
         files:
         - name: VectorGraphics_Day2.pdf
           path: /assets/slides/06_VectorGraphics_Day2.pdf 
           type: slides
-        - name: "Adobe Illustrator for Beginners (10 min)"
-          path: https://www.youtube.com/watch?v=3NBKRywEbNs
-          type: external code 
-        - name: "InkScape Tutorial for Beginners (11 min)"
-          path: https://www.youtube.com/watch?v=-_KJZPOYBeA
-          type: external code 
+        - name: Logo (SVG file) with Gradients
+          path: /demos/svg-practice/gradients.svg
+          type: code 
+        - name: All the ways to embed SVGs
+          path: /demos/svg-practice/embed-svgs.html
+          type: code 
       - topics: Review
         assigned: 
         files:
