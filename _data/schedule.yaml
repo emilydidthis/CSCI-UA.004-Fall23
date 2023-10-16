@@ -174,7 +174,8 @@ schedule:
   - week_number: 7
     classes:
       - topics: Vector Graphics
-        assigned: 
+        assigned:
+        - "Come in with questions for the review" 
         files:
         - name: VectorGraphics_Day2.pdf
           path: /assets/slides/06_VectorGraphics_Day2.pdf 

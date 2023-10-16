@@ -6,6 +6,16 @@
       <stop offset="0%" stop-color="yellow" />
       <stop offset="100%" stop-color="magenta" />
     </linearGradient>
+
+    <linearGradient id="gradient2">
+      <stop offset="0%" stop-color="cyan" />
+      <stop offset="100%" stop-color="yellow" />
+    </linearGradient>
+
+    <linearGradient id="gradient3">
+      <stop offset="0%" stop-color="magenta" />
+      <stop offset="100%" stop-color="cyan" />
+    </linearGradient>
   </defs>
 
   <g id="shapes">
@@ -13,13 +23,15 @@
     <rect x="30" y="30" width="240" height="240" fill="url(#gradient1)" opacity="0.8" />
 
     <!-- circle -->
-    
+    <circle cx="270" cy="150" r="120" fill="url(#gradient2)" opacity ="0.5"/>
 
     <!-- triangle -->
+    <polygon points="400,30 270,270 520,270" fill="url(#gradient3)" opacity="0.5"/>
     
     <!-- line -->
-  
+    <line x1="70" y1="180" x2="340" y2="180" stroke="black" stroke-width="1"/>
   </g>
 
   <!-- text --> 
+  <text x="70" y="170" font-family="Helvetica" font-size="44">CSCI-UA 004</text>
 </svg>
