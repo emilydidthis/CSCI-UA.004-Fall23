@@ -18,14 +18,18 @@ Using a text editor, code a scalable vector graphic into your assignments page o
 
 Next, embed at least two links into your SVG code. The links should originate from different parts of the image. The destination of these links is up to you.
 
-Finally, style the image with CSS. Your CSS should be coded into the stylesheet of your assignments page and include hover and active link states. Your vector graphic should have a level of complexity that demonstrates thoughtful exploration of SVG capability.
+<!-- Finally, style the image with CSS. Your CSS should be coded into the stylesheet of your assignments page and include hover and active link states. Your vector graphic should have a level of complexity that demonstrates thoughtful exploration of SVG capability. -->
+
+Finally, style the image with CSS. Include hover and active link states. Your vector graphic should have a level of complexity that demonstrates thoughtful exploration of SVG capability
 
 <div class="section-break"><br></div>
 
 ### Publishing Your Image
 Code the image directly into the HTML of your i6 home page (assignments directory). Use the `<svg>` element to display your vector graphic on the page. For accessibility, add a `<title>` element as the first child of your SVG element with a description of the image.
 
-Publish the web page along with your image to the i6 server. Your project should be available at: i6.cims.nyu.edu/~netid/. Update the code of your assignments directory to link to the (same) page.
+Publish the web page along with your image to the i6 server. Your project should be available at: i6.cims.nyu.edu/~netid/. 
+
+<!-- Update the code of your assignments directory to link to the (same) page. -->
 
 <div class="section-break"><br></div>
 
@@ -45,5 +49,6 @@ This assignment is worth 10 points.
 - An original vector graphic with at least three SVG drawing elements (3 points)
 - There should be an SVG `<text>` element with the student’s initials (1 point)
 - There should be at least two links embedded in the SVG, from different parts of the image (2 points)
-- The SVG should be styled with CSS in the web page’s stylesheet; styles should include hover and active link states (3 points)
+<!-- - The SVG should be styled with CSS in the web page’s stylesheet; styles should include hover and active link states (3 points) -->
+- The SVG should be styled with CSS and/or within `<def>`; styles should include hover and active link states (3 points)
 - The SVG logo should be coded into the home page of the student’s i6 account with the `<svg>` element and, for accessibility, the `<title>` element (1 point)
