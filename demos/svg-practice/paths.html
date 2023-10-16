@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG Example 1</title>
+</head>
+<style>
+    svg {
+        border: 1px solid white;
+    }
+    body {
+        background-color: #212121;
+    }
+</style>
+<body>
+    <!-- <svg viewBox="0 0 500 500" stroke="white">
+        <path fill="none" stroke="red" stroke-width="5" d="M100,200 C100,100 250,100 250,200 S400,300 400,200" />
+    </svg> -->
+
+    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+        <!-- Uppercase "M" command to move to (20, 20) -->
+        <path d="M 20 20 L 80 20 L 50 80 Z" stroke="yellow" fill="none" />
+    </svg>
+    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    
+        <!-- Lowercase "m" command to move relative to the current position -->
+        <path d="m 20 20 l 60 0 l -30 60 z" stroke="red" fill="none" />
+    </svg>
+    
+</body>
+</html>

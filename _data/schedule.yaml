@@ -153,6 +153,8 @@ schedule:
       - topics: Vector Graphics
         assigned: 
         - <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial"> MDN web docs – SVG Tutorial</a>
+        - "[Assignment #5](https://emilydidthis.github.io/CSCI-UA.004-Fall23/assignments/05.html)"
+
         files:
         - name: VectorGraphics_Day1.pdf
           path: /assets/slides/06_VectorGraphics_Day1.pdf 
@@ -174,9 +176,15 @@ schedule:
       - topics: Vector Graphics
         assigned: 
         files:
-        - name: 
-          path: 
-          type: 
+        - name: VectorGraphics_Day2.pdf
+          path: /assets/slides/06_VectorGraphics_Day2.pdf 
+          type: slides
+        - name: "Adobe Illustrator for Beginners (10 min)"
+          path: https://www.youtube.com/watch?v=3NBKRywEbNs
+          type: external code 
+        - name: "InkScape Tutorial for Beginners (11 min)"
+          path: https://www.youtube.com/watch?v=-_KJZPOYBeA
+          type: external code 
       - topics: Review
         assigned: 
         files:

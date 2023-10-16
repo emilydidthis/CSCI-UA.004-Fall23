@@ -1,0 +1,25 @@
+<svg version="1.1" width="550" height="300" xmlns="http://www.w3.org/2000/svg">
+  <title>SVG shapes with gradient colors</title> <!-- use the <title> element for accessibility (like the alt attribute) -->
+
+  <defs>
+    <linearGradient id="gradient1">
+      <stop offset="0%" stop-color="yellow" />
+      <stop offset="100%" stop-color="magenta" />
+    </linearGradient>
+  </defs>
+
+  <g id="shapes">
+    <!-- square -->
+    <rect x="30" y="30" width="240" height="240" fill="url(#gradient1)" opacity="0.8" />
+
+    <!-- circle -->
+    
+
+    <!-- triangle -->
+    
+    <!-- line -->
+  
+  </g>
+
+  <!-- text --> 
+</svg>
