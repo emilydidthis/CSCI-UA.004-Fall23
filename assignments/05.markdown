@@ -27,7 +27,8 @@ Finally, style the image with CSS. Include hover and active link states. Your ve
 ### Publishing Your Image
 Code the image directly into the HTML of your i6 home page (assignments directory). Use the `<svg>` element to display your vector graphic on the page. For accessibility, add a `<title>` element as the first child of your SVG element with a description of the image.
 
-Publish the web page along with your image to the i6 server. Your project should be available at: i6.cims.nyu.edu/~netid/. 
+<!-- Publish the web page along with your image to the i6 server.  -->
+Your project should be available at: i6.cims.nyu.edu/~netid/. 
 
 <!-- Update the code of your assignments directory to link to the (same) page. -->
 
