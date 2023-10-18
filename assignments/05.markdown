@@ -51,5 +51,5 @@ This assignment is worth 10 points.
 - There should be an SVG `<text>` element with the student’s initials (1 point)
 - There should be at least two links embedded in the SVG, from different parts of the image (2 points)
 <!-- - The SVG should be styled with CSS in the web page’s stylesheet; styles should include hover and active link states (3 points) -->
-- The SVG should be styled with CSS and/or within `<def>`; styles should include hover and active link states (3 points)
+- The SVG should be styled with CSS; styles should include hover and active link states (3 points)
 - The SVG logo should be coded into the home page of the student’s i6 account with the `<svg>` element and, for accessibility, the `<title>` element (1 point)
