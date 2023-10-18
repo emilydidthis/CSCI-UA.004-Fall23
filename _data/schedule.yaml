@@ -190,11 +190,21 @@ schedule:
           path: /demos/svg-practice/embed-svgs.html
           type: code 
       - topics: Review
-        assigned: 
+        assigned:
+        - Study for midterm! 
         files:
-        - name: 
-          path: 
-          type:           
+        - name: midterm-review-slides.pdf
+          path: /assets/slides/07_MidtermReview.pdf
+          type: slides
+        - name: "Download: Unix Maze"
+          path: /assets/files/unixMaze.zip
+          type: download
+        - name: "Download: Midterm Website Files"
+          path: /assets/files/midterm_review.zip
+          type: download
+        - name: Midterm Practice Exam
+          path: /assets/files/midterm-practice-qs.pdf
+          type: slides              
   - week_number: 8
     classes:
       - topics: Midterm Exam
