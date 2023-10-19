@@ -202,9 +202,13 @@ schedule:
         - name: "Download: Midterm Website Files"
           path: /assets/files/midterm_review.zip
           type: download
+        - name: Midterm Practice Final Site
+          path: /demos/midterm-review/
+          type: code       
         - name: Midterm Practice Exam
           path: /assets/files/midterm-practice-qs.pdf
-          type: slides              
+          type: slides
+               
   - week_number: 8
     classes:
       - topics: Midterm Exam

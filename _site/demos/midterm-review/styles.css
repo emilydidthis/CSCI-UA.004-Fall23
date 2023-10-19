@@ -1,16 +1,52 @@
+#container {
+  width: 720px;
+  margin: auto;
+}
+
 main {
-    display: flex;
+  display: flex;
 }
 
-#col2 {
-    border-top: 1px solid black;
+.col1,
+.col2 {
+  width: 48%;
+  margin-right: 4%;
 }
 
-#col1, #col2{
-    width: 48%;
-    margin-right: 4%;
+.col2 {
+  border-top: 1px solid black;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+h1,
+p,
+ol {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 130%;
+}
+
+h1 {
+  font-size: 1.4em;
 }
 
 img {
-    border: 1px solid black;
+  border: 1px solid black;
+  width: 100%;
+  height: auto;
+}
+
+.illustration,
+.credit {
+  font-size: 0.7em;
+}
+
+.credit {
+  text-align: center;
+  padding-top: 10px;
 }

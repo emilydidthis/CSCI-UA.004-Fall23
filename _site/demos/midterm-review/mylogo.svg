@@ -1,0 +1,29 @@
+<svg version="1.1" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+
+			<title>A stylized black domino mask with three diamonds beneath it. The two outermost diamonds have the letters S and L in them respectively. There are two small black squares and one small black circle overlapping over the diamonds.</title>
+
+			<polygon points="30,40 50,20 70,40 90,20 110,40 90,60 70,40 50,60" stroke="black" stroke-width="5" />
+		
+			<polygon points="40,40 50,30 60,40 50,50" fill="white" />
+		
+			<polygon points="80,40 90,30 100,40 90,50" fill="white" />
+		
+			<a href="https://en.wikipedia.org/wiki/Harlequin"><polygon class="diamond" points="10,90, 30,60 50,90 30,120" fill="green" /></a>
+		
+			<a href="https://en.wikipedia.org/wiki/Columbina"><polygon class="diamond" points="50,90, 70,60 90,90 70,120" fill="#264FD0" /></a>
+		
+			<a href="https://en.wikipedia.org/wiki/Pierrot"><polygon class="diamond" points="90,90, 110,60 130,90 110,120" fill="#D41616" /></a>
+		
+			<rect x="40" y="80" width="20" height="20" stroke-width="2px" stroke="black" fill="transparent" />
+		
+			<circle cx="70" cy="90" r="20" stroke-width="2px" stroke="black" fill="transparent" />
+		
+			<rect x="80" y="80" width="20" height="20" stroke-width="2px" stroke="black" fill="transparent" />
+		
+			<!-- Unused Triangle
+			<polygon points="100,98 110,78 120,98" stroke-width="2px" stroke="black" fill="transparent" /> -->
+		
+			<text x="23" y="97" font-family="Helvetica" font-size="20" fill="white">S</text>
+		
+			<text x="105" y="97" font-family="Helvetica" font-size="20" fill="white">L</text>
+		</svg>
