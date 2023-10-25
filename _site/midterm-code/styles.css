@@ -1,0 +1,124 @@
+body {
+    background-color: #2f4c66;
+    color: rgb(255, 255, 255);
+}
+
+#container {
+    width: 75%;
+    margin: auto;
+    position: relative;
+}
+
+#cloud {
+    height: 70px;
+    width: auto;
+    fill: rgb(255, 255, 255);
+    position: absolute;
+    right: 0;
+}
+
+#cloud:hover {
+    fill: #4da7fb;
+}
+
+#cloud:active {
+    fill: yellow;
+}
+
+nav {
+    margin-top: 60px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #0283fc;
+    display: flex;
+}
+
+h1,
+h2,
+h3,
+nav,
+.lead {
+    font-family: Helvetica, Arial   , sans-serif;
+    font-weight: normal;
+}
+
+a:link,
+a:visited {
+    color: yellow;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: #4da7fb;
+}
+
+a:active {
+    background: yellow;
+}
+
+p {
+    font-family: 'Courier New', monospace;
+    line-height: 1.2em;
+}
+
+.title:link,
+.title:visited {
+    color: white;
+}
+
+.title:hover {
+    color: #4da7fb;
+}
+
+.title:active {
+    background: none;
+    color: yellow;
+}
+
+h2 {
+    text-decoration: overline;
+}
+
+nav {
+    text-align: left;
+}
+
+a.navigation {
+    margin-right: 20px;
+}
+
+.lead,
+h3 {
+    font-size: 1.3em;
+}
+
+article {
+    display: flex;
+}
+
+#publication {
+    text-decoration: underline;
+}
+
+.publication {
+    font-style: italic;
+}
+
+.diagram {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.type {
+    margin-top: 40px;
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-top: 1px solid #4da7fb;
+    text-align: center;
+    font-size: 0.9em;
+}

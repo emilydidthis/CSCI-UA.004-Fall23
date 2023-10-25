@@ -220,9 +220,9 @@ schedule:
       - topics: Design + Accessibility
         assigned: 
         files:
-        - name: 
-          path: 
-          type:   
+        - name: Accessibility.pdf
+          path: /assets/slides/08_Accessibility.pdf
+          type: slides   
   - week_number: 9
     classes:
       - topics: Page Layout
