@@ -4,7 +4,7 @@ layout: assignments
 title: "Assignment #6"
 due-date: Nov 6 
 topic: Page Layout
-live: false
+live: true
 
 ---
 
