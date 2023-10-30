@@ -3,7 +3,40 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Grid Exercise #2</title>
+    <title>Grid Exercise #1</title>
+    <style>
+      .a, .b, .c, .d, .e, .f {
+        background-color: rgba(0, 0, 255, .2);
+        border: 1px solid blue;
+        border-radius: 10px;
+        padding: 10px;
+      }
+
+      .wrapper {
+        display: grid;
+        
+        /* grid-template-columns: 100px 100px 100px; */
+        /* grid-template-columns: repeat(5, 50px); */
+
+        /* fr fractional unit */
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 100px;
+        gap: 10px;
+
+        /* placing grid items */
+        grid-template-areas:
+          "b c d"
+          "e f a";      
+        }
+
+      .a {grid-area: a;}
+      .b {grid-area: b;}
+      .c {grid-area: c;}
+      .d {grid-area: d;}
+      .e {grid-area: e;}
+      .f {grid-area: f;}
+
+    </style>
   </head>
 
   <body>

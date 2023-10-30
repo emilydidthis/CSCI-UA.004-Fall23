@@ -235,6 +235,12 @@ schedule:
         - name: "Download: CSS Grid Practice Files"
           path: /assets/files/css-grid.zip
           type: download
+        - name: CSS Grid Exercise 1
+          path: /demos/css-grid/grid-exercise-1.html
+          type: code
+        - name: CSS Grid Exercise 2
+          path: /demos/css-grid/grid-exercise-2.html
+          type: code
       - topics: Page Layout
         assigned: 
         files:

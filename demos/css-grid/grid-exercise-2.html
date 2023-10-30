@@ -3,7 +3,36 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Grid Exercise #1</title>
+    <title>Grid Exercise #2</title>
+    <style>
+     .a, .b, .c, .d, .e, .f {
+        background-color: rgba(255, 0, 0, .2);
+        border: 1px solid red;
+        border-radius: 10px;
+        padding: 10px;
+      }
+
+      .a {grid-area: a;}
+      .b {grid-area: b;}
+      .c {grid-area: c;}
+      .d {grid-area: d;}
+      .e {grid-area: e;}
+      .f {grid-area: f;}
+
+      .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* four fractional width columns */
+        grid-auto-rows: minmax(100px, auto); /* max is automatically calculated */
+        /* grid-template-rows: repeat(4, 100px); */
+        column-gap: 10px;
+        row-gap: 1em;
+        grid-template-areas: /* placing grid items */
+          "a a b d"
+          "a a b d"
+          "a a c e"
+          "a a c f";
+      }
+    </style>
   </head>
 
   <body>

@@ -1,3 +1,11 @@
+
+@font-face{
+  font-family: "PlaypenSans";
+  src: url("PlaypenSans-VariableFont_wght.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 #container {
   width: 720px;
   margin: auto;
@@ -27,7 +35,7 @@ footer {
 h1,
 p,
 ol {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "PlaypenSans";
   line-height: 130%;
 }
 
