@@ -226,11 +226,15 @@ schedule:
   - week_number: 9
     classes:
       - topics: Page Layout
-        assigned: 
+        assigned:
+        - "Chapter 16: CSS Layout with Flexbox and Grid" 
         files:
-        - name: 
-          path: 
-          type: 
+        - name: PageLayout_Day01.pdf
+          path: /assets/slides/09_PageLayout.pdf
+          type: slides
+        - name: "Download: CSS Grid Practice Files"
+          path: /assets/files/css-grid.zip
+          type: download
       - topics: Page Layout
         assigned: 
         files:
