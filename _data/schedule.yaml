@@ -244,9 +244,9 @@ schedule:
       - topics: Page Layout
         assigned: 
         files:
-        - name: 
-          path: 
-          type:   
+         - name: "Download: Ghibli Website Files"
+          path: /assets/files/ghibli-files.zip
+          type: download 
   - week_number: 10
     classes:
       - topics: Responsive Design
