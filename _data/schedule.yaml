@@ -244,9 +244,12 @@ schedule:
       - topics: Page Layout
         assigned: 
         files:
-         - name: "Download: Ghibli Website Files"
-          path: /assets/files/ghibli-files.zip
-          type: download 
+        - name: Ghibli Website Wireframes
+          path: /demos/css-grid/grid-exercise-2.html
+          type: code
+        - name: "Download: Ghibli Website Files"
+          path: https://www.figma.com/file/yZC2jiue4tOp05AXxokbIp/Ghibli-Wireframes?type=design&node-id=0%3A1&mode=design&t=cQRbHusnqA6Bv5pK-1
+          type: external code 
   - week_number: 10
     classes:
       - topics: Responsive Design
