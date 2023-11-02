@@ -56,8 +56,8 @@ This assignment is worth 10 points.
 - An original text of at least 400 words about a topic of specialized knowledge (1 point)
 - A new website in its own subdirectory; the website should consist of at least three pages with properly-formatted images, appropriately-marked up text, and semantic section elements (3 points)
 - One external stylesheet for all pages of the site; each page is styled with two or more columns of text and/or images (1 point)
-- CSS Grid is applied on at least one page (3 points)
-- CSS Flexbox is applied on at least one page (1 point)
+- CSS Grid is applied on at least one page (2 points)
+- CSS Flexbox is applied on at least one page (2 point)
 - A web font is incorporated into the site with the CSS `@font-face` rule (1 point)
 
 *Points may be deducted for improperly formed HTML elements or CSS style rules.*
