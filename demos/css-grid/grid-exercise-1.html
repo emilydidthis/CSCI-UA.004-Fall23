@@ -19,7 +19,8 @@
         /* grid-template-columns: repeat(5, 50px); */
 
         /* fr fractional unit */
-        grid-template-columns: 1fr 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 100px 100px;
         gap: 10px;
 
@@ -27,7 +28,7 @@
         grid-template-areas:
           "b c d"
           "e f a";      
-        }
+      }
 
       .a {grid-area: a;}
       .b {grid-area: b;}

@@ -1,0 +1,135 @@
+/* importing custom font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+
+/* ---- FOR ALL PAGES ---- */
+nav {
+    text-align: center;
+}
+
+nav ul { /* targets only unordered list in nav */
+    list-style-type: none; /* remove bullets */
+    padding: 0; /* remove padding */
+}
+
+nav li { /* targets only list items in nav */
+    display: inline; 
+    padding: 30px;
+}
+
+nav {
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black; /* nicer underline */
+}
+
+a:hover {
+    border-bottom: 2px solid black; /* make underline thicker on hover */
+}
+
+#logo {
+    /* centering an image*/
+    display: block; /* must change display to block */
+    margin: auto; /* auto calculates right and left margins */
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* adding custom font */
+    line-height: 1.3em;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: .8em;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+main {
+    margin-top: 50px;
+}
+
+
+/* ---- HOME ---- */
+
+#about {
+    width: 65%;
+    margin: auto;
+}
+
+
+/* ---- FILMMAKERS ---- */
+#filmmakers {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.directors {
+    display: flex;
+    margin-bottom: 35px;
+}
+.directors img {
+    width: 200px;
+    align-self: start; /* prevent the image's height 
+    from stretching to fit the entire container
+    https://stackoverflow.com/questions/56655095/why-is-heightauto-not-working-for-this-image  */
+}
+.bio {
+    margin-left: 35px;
+}
+.even { /* reversing photo and bio */
+    flex-direction: row-reverse;
+}
+.even .bio {  /* adjusting margins */
+    margin-left: 0px;
+    margin-right: 35px;
+}
+
+section h2 { /* director's names */
+    margin: 0;
+    font-size: 1.2em;
+}
+
+
+
+/* ---- FILMS ---- */
+#film-grid {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 2em;
+}
+
+#film-grid h1 { /* Make the h1 span an entire row */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column */
+    /* start in first, span three columns*/
+    grid-column: 1/span 3;
+    margin-bottom: 0;
+}
+
+.film img{
+    width: 100%;
+}
+
+.film h2 {
+    font-size: 1.1em;
+    margin-bottom: 0;
+}
+
+.film p {
+    margin: 0;
+    padding-top: .5em;
+}

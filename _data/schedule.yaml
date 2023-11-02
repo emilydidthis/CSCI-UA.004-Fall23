@@ -252,7 +252,10 @@ schedule:
           type: download 
         - name: "Download: Ghibli HTML Files ONLY"
           path: /assets/files/ghibli-html-files.zip
-          type: download 
+          type: download
+        - name: Final Ghibli Site
+          path: /demos/ghibli/
+          type: code 
   - week_number: 10
     classes:
       - topics: Responsive Design
