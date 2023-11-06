@@ -21,7 +21,7 @@ Begin by writing or repurposing an original text of at least 400 words—this wi
 ### Design and Layout
 Allow the content of your website to guide decisions you make about its design and layout. Create one external stylesheet for all pages of your site.
 
-Your site should include at least three web pages with a multi-column layout on each page. Include properly-formatted images and appropriately-marked up text and continue to define sections of content with HTML semantic elements. Add a web font to your pages with the CSS `@font-face` rule.
+Your site should include at least three web pages with a multi-column layout on each page. Include properly-formatted images and appropriately-marked up text and continue to define sections of content with HTML semantic elements. Add a web font to your pages with the CSS `@font-face` rule, or with an `import` or `link`.
 
 Use the CSS Grid Layout Module for the overall layout of each page. Also use the CSS Flexible Box Layout Module (Flexbox) at least once on each page to arrange items along one axis. You can feel free to use the same general layout for every page of the site but you don’t need to.
 
@@ -58,6 +58,6 @@ This assignment is worth 10 points.
 - One external stylesheet for all pages of the site; each page is styled with two or more columns of text and/or images (1 point)
 - CSS Grid is applied on at least one page (2 points)
 - CSS Flexbox is applied on at least one page (2 point)
-- A web font is incorporated into the site with the CSS `@font-face` rule (1 point)
+- A web font is incorporated into the site with the CSS `@font-face` rule, or externally imported/linked. (1 point)
 
 *Points may be deducted for improperly formed HTML elements or CSS style rules.*

@@ -268,7 +268,10 @@ schedule:
           type: slides 
         - name: Units of Length Practice
           path: /demos/rem/index.html
-          type: code 
+          type: code
+        - name: Basic Media Queries
+          path: /demos/media-query/index.html
+          type: code  
         - name: "Download: Final Ghibli Website (HTML + CSS)"
           path: /assets/files/ghibli-html-css.zip
           type: download   

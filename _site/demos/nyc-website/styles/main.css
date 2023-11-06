@@ -69,21 +69,23 @@ ul {
 }
 
 /* ------------ Flexbox ------------ */
-main {
-    margin-top: 90px;
-    display: flex;
-    justify-content: space-between;
-}
 
-article, section {
-    width: calc(96%/3)
-}
+@media (min-width: 850px){
+    main {
+        margin-top: 90px;
+        display: flex;
+        justify-content: space-between;
+    }
 
-img {
-    width: 100%;
-    height: auto;
-}
+    article, section {
+        width: calc(96%/3)
+    }
 
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
 /* ------------ More Box Model ------------ */
 #population {
     border-top: 1px solid orange;

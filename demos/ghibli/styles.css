@@ -42,6 +42,7 @@ a:hover {
 body {
     font-family: 'Inter', sans-serif; /* adding custom font */
     line-height: 1.3em;
+    padding: 10px;
 }
 
 footer {
@@ -61,75 +62,88 @@ main {
 
 /* ---- HOME ---- */
 
-#about {
-    width: 65%;
-    margin: auto;
+@media (min-width: 768px){
+    #about {
+        width: 65%;
+        margin: auto;
+    }
 }
-
 
 /* ---- FILMMAKERS ---- */
-#filmmakers {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.directors {
-    display: flex;
-    margin-bottom: 35px;
-}
+
 .directors img {
-    width: 200px;
-    align-self: start; /* prevent the image's height 
-    from stretching to fit the entire container
-    https://stackoverflow.com/questions/56655095/why-is-heightauto-not-working-for-this-image  */
+    width: 40%;
 }
-.bio {
-    margin-left: 35px;
-}
-.even { /* reversing photo and bio */
-    flex-direction: row-reverse;
-}
-.even .bio {  /* adjusting margins */
-    margin-left: 0px;
-    margin-right: 35px;
-}
+@media (min-width: 768px){
+    #filmmakers {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .directors {
+        display: flex;
+        margin-bottom: 35px;
+    }
+    .directors img {
+        width: 200px;
+        align-self: start; /* prevent the image's height 
+        from stretching to fit the entire container
+        https://stackoverflow.com/questions/56655095/why-is-heightauto-not-working-for-this-image  */
+    }
+    .bio {
+        margin-left: 35px;
+    }
+    .even { /* reversing photo and bio */
+        flex-direction: row-reverse;
+    }
+    .even .bio {  /* adjusting margins */
+        margin-left: 0px;
+        margin-right: 35px;
+    }
 
-section h2 { /* director's names */
-    margin: 0;
-    font-size: 1.2em;
+    section h2 { /* director's names */
+        margin: 0;
+        font-size: 1.2em;
+    }
 }
-
 
 
 /* ---- FILMS ---- */
-#film-grid {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1em;
-    row-gap: 2em;
-}
-
-#film-grid h1 { /* Make the h1 span an entire row */
-    /* https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column */
-    /* start in first, span three columns*/
-    grid-column: 1/span 3;
-    margin-bottom: 0;
-}
 
 .film img{
-    width: 100%;
+    width: 50%;
 }
 
-.film h2 {
-    font-size: 1.1em;
-    margin-bottom: 0;
-}
+@media (min-width: 768px){
+    #film-grid {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
 
-.film p {
-    margin: 0;
-    padding-top: .5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1em;
+        row-gap: 2em;
+    }
+
+    #film-grid h1 { /* Make the h1 span an entire row */
+        /* https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column */
+        /* start in first, span three columns*/
+        grid-column: 1/span 3;
+        margin-bottom: 0;
+    }
+
+    .film img{
+        width: 100%;
+    }
+
+    .film h2 {
+        font-size: 1.1em;
+        margin-bottom: 0;
+    }
+
+    .film p {
+        margin: 0;
+        padding-top: .5em;
+    }
 }
