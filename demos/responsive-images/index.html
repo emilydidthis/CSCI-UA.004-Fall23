@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      img {
+        width: 49%;
+        display: inline;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Viewport width: <span class="width"></span></p>
+
+    <!-- HTML generated using hilite.me -->
+    <div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #d0d0d0">((</span><span style="color: #6ab825; font-weight: bold">min-width</span><span style="color: #d0d0d0">:</span> <span style="color: #6ab825; font-weight: bold">400px</span><span style="color: #d0d0d0">)</span> <span style="color: #6ab825; font-weight: bold">and</span> <span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">max-width</span><span style="color: #d0d0d0">:</span> <span style="color: #6ab825; font-weight: bold">800px</span><span style="color: #d0d0d0">))</span> <span style="color: #6ab825; font-weight: bold">400px</span><span style="color: #d0d0d0">,</span>
+<span style="color: #d0d0d0">((</span><span style="color: #6ab825; font-weight: bold">min-width</span><span style="color: #d0d0d0">:</span> <span style="color: #6ab825; font-weight: bold">800px</span><span style="color: #d0d0d0">)</span> <span style="color: #6ab825; font-weight: bold">and</span> <span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">max-width</span><span style="color: #d0d0d0">:</span> <span style="color: #6ab825; font-weight: bold">1200px</span><span style="color: #d0d0d0">))</span> <span style="color: #6ab825; font-weight: bold">600px</span><span style="color: #d0d0d0">,</span>
+<span style="color: #d0d0d0">((</span><span style="color: #6ab825; font-weight: bold">min-width</span><span style="color: #d0d0d0">:</span> <span style="color: #6ab825; font-weight: bold">1201px</span><span style="color: #d0d0d0">)</span> <span style="color: #6ab825; font-weight: bold">and</span> <span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">max-width</span><span style="color: #d0d0d0">:</span> <span style="color: #6ab825; font-weight: bold">1600px</span><span style="color: #d0d0d0">))</span> <span style="color: #6ab825; font-weight: bold">800px</span><span style="color: #d0d0d0">,</span>
+<span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">min-width</span><span style="color: #d0d0d0">:</span> <span style="color: #6ab825; font-weight: bold">1601px</span><span style="color: #d0d0d0">)</span> <span style="color: #6ab825; font-weight: bold">1000px</span>
+    </pre></div>
+
+    <br>
+
+    <!-- Image element WITH sizes attribute -->
+    <img
+      width="800"
+      height="600"
+      src="knit-images/stockinette-800.jpg"
+      srcset="
+        knit-images/stockinette-480.jpg   480w,
+        knit-images/stockinette-800.jpg   800w,
+        knit-images/stockinette-1200.jpg 1200w,
+        knit-images/stockinette-1600.jpg 1600w,
+        knit-images/stockinette-2000.jpg 2000w
+      "
+      sizes="
+        ((min-width: 400px) and (max-width: 800px)) 400px,
+        ((min-width: 800px) and (max-width: 1200px)) 600px,
+        ((min-width: 1201px) and (max-width: 1600px)) 800px,
+        (min-width: 1601px) 1000px"
+      alt="Stockinette stitch overlayed with image size in pixels"
+      title="Image element with sizes attribute"
+    />
+
+      <!-- Image element without sizes attribute -->
+      <img
+      width="800"
+      height="600"
+      src="knit-images/stockinette-800.jpg"
+      srcset="
+        knit-images/stockinette-480.jpg   480w,
+        knit-images/stockinette-800.jpg   800w,
+        knit-images/stockinette-1200.jpg 1200w,
+        knit-images/stockinette-1600.jpg 1600w,
+        knit-images/stockinette-2000.jpg 2000w
+      "
+      alt="Stockinette stitch overlayed with image size in pixels"
+      title="Image element without sizes attribute"
+    />
+
+   
+
+    <p>Pixel density: <span class="density"></span></p>
+  </body>
+
+  <script>
+    viewportWidth = () =>
+      (document.querySelector(".width").textContent =
+        document.querySelector("html").clientWidth);
+    pixelDensity = () =>
+      (document.querySelector(".density").textContent =
+        window.devicePixelRatio);
+
+    window.addEventListener("load", () => {
+      viewportWidth();
+      pixelDensity();
+    });
+
+    window.addEventListener("resize", viewportWidth);
+  </script>
+</html>

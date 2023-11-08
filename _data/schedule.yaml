@@ -277,11 +277,18 @@ schedule:
           type: download   
       - topics: Responsive Design
         assigned:
-        - "[Assignment #7](https://emilydidthis.github.io/CSCI-UA.004-Fall23/assignments/07.html)"  
+        - "[Assignment #7](https://emilydidthis.github.io/CSCI-UA.004-Fall23/assignments/07.html)" 
+        - "<a href='https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images'>MDN web docs: Responsive images</a>"
         files:
-        - name: 
-          path: 
-          type:   
+        - name: ResponsiveDesign_Day02.pdf
+          path: /assets/slides/10_ResponsiveDesign_Day2.pdf
+          type: slides
+        - name: Responsive Raster Images
+          path: /demos/responsive-images/index.html
+          type: code
+        - name: "Download: Rangefinder Camera Files"
+          path: /assets/files/camera.zip
+          type: download       
   - week_number: 11
     classes:
       - topics: Javascript
