@@ -288,7 +288,10 @@ schedule:
           type: code
         - name: "Download: Rangefinder Camera Files"
           path: /assets/files/camera.zip
-          type: download       
+          type: download
+        - name: Final Responsive Rangefinder Website
+          path: /demos/camera/index.html
+          type: code             
   - week_number: 11
     classes:
       - topics: Javascript
