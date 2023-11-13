@@ -53,7 +53,7 @@ Submit the following via [NYU Brightspace]({{ site.brightspace }}).
 ### Grading
 This assignment is worth 10 points.
 
-- A completely revised version of the previous website, optimized for mobile devices (3 points)
+- A completely revised version of the previous website, optimized for mobile and desktop devices (3 points)
 - Relative units such as `fr`, `minmax()`, and percentage should be used for most CSS widths (1 point)
 - The viewport should be set on all pages and the CSS should include at least two `@media` queries: one to optimize the layout for different browser widths (3 points)
 - Desktop layout should include two or more columns with the CSS flex or grid layout modules (1 point)
