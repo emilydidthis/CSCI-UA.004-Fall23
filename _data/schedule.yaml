@@ -296,10 +296,14 @@ schedule:
     classes:
       - topics: Javascript
         assigned: 
+        - "Chapter 21: Introduction to JavaScript"
         files:
-        - name: 
-          path: 
-          type: 
+        - name: Javascript_Day01.pdf
+          path: /assets/slides/11_Javascript_Day1.pdf
+          type: slides
+        - name: "Download: Javascript Day 1 Files"
+          path: /assets/files/javascript-day1.zip
+          type: download 
       - topics: Javascript
         assigned: 
         files:
