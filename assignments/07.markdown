@@ -55,6 +55,6 @@ This assignment is worth 10 points.
 
 - A completely revised version of the previous website, optimized for mobile devices (3 points)
 - Relative units such as `fr`, `minmax()`, and percentage should be used for most CSS widths (1 point)
-- The viewport should be set on all pages and the CSS should include at least two `@media` queries: one to optimize the layout for different browser widths and one for the user’s preferred color scheme (3 points)
+- The viewport should be set on all pages and the CSS should include at least two `@media` queries: one to optimize the layout for different browser widths (3 points)
 - Desktop layout should include two or more columns with the CSS flex or grid layout modules (1 point)
 - Images should be flexible with higher-resolution versions of all raster graphics offered in conjunction with the HTML srcset and sizes attributes (2 points)
