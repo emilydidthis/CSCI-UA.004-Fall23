@@ -303,7 +303,16 @@ schedule:
           type: slides
         - name: "Download: Javascript Day 1 Files"
           path: /assets/files/javascript-day1.zip
-          type: download 
+          type: download
+        - name: "Greeting by time of day"
+          path: /demos/javascript-day1/greeting/
+          type: code  
+        - name: "JavaScript basics"
+          path: /demos/javascript-day1/basics/
+          type: code  
+        - name: "Class today? [Conditionals]"
+          path: /demos/javascript-day1/conditionals/
+          type: code        
       - topics: Javascript
         assigned: 
         files:
