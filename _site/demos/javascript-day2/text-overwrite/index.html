@@ -26,6 +26,22 @@
 
 
     <!-- Embedded Javascript -->
-    <script></script>
+    <script>
+      // DOM query that accesses all <p> elements as a NodeList
+      let paragraphs = document.getElementsByTagName("p");
+      console.log(paragraphs);
+
+      // change the text of the first paragraph
+      let firstParagraph = paragraphs[0]; // first paragraph has an index of 0
+      // console.log(firstParagraph);
+
+      // change text content of the first paragraph
+      firstParagraph.textContent = "This text overwrites what was originally coded into the element.";
+
+      // change the HTML of the last paragraph
+       paragraphs[3].innerHTML = "<a href='https://www.google.com'> Google </a>";
+       console.log(paragraphs[3]);
+       
+    </script>
   </body>
 </html>

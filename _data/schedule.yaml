@@ -323,6 +323,15 @@ schedule:
         - name: "Download: Javascript Day 2 Files"
           path: /assets/files/javascript-day2.zip
           type: download
+        - name: "Day or Night"
+          path: /demos/javascript-day2/day-or-night/
+          type: code
+        - name: "Changing Text and HTML Content"
+          path: /demos/javascript-day2/text-overwrite/
+          type: code
+        - name: "Flip a Coin"
+          path: /demos/javascript-day2/flip-a-coin/
+          type: code      
   - week_number: 12
     classes:
       - topics: Javascript

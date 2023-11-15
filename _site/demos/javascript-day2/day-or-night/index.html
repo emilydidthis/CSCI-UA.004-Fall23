@@ -10,7 +10,11 @@
     <style>
         h1{
             font-family: Georgia, sans-serif;
+            /* text-align: center; */
         }
+        /* body {
+            background-color: lightblue;
+        } */
     </style>
 </head>
 <body>
@@ -20,18 +24,31 @@
     <script>
         
     // create variable to store current hour
+    let hour = new Date().getHours();
+    console.log("Hours:", hour);
+
+    // hardcode the hour to check if night
+    // hour = 22;
+
+    // create DOM Queries that 
+    let timeofday = document.getElementById("timeofday");
+    let heading = document.getElementById("message");
+    let background = document.querySelector("body");
 
 
-    // link Javascript to HTML element with id message
- 
+    heading.style.textAlign = "center"; 
 
     // conditional statements
     // change text to day under certain conditions
+    if (hour >= 0 && hour <= 18){
+        timeofday.textContent = "Day";
+        background.style.backgroundColor = "lightblue";
+    } else {  // otherwise set text to night
+        timeofday.textContent = "Night";
+        heading.style.color = "white";
+        background.style.backgroundColor = "black";
+    }
 
-
-    // otherwise set text to night
-
-    
     </script>
 </body>
 </html>
