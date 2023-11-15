@@ -20,30 +20,18 @@
     <script>
         
     // create variable to store current hour
-    let hour = new Date().getHours();
-    console.log(hour);
+
 
     // link Javascript to HTML element with id message
-    let timeofday = document.getElementById("timeofday");
-    let heading = document.getElementById("message");
-    let background  = document.querySelector("body");
-    hour = 20;
-    heading.style.textAlign = "center";
  
 
     // conditional statements
     // change text to day under certain conditions
-    if (hour >=0 && hour<=18){ // day
-        timeofday.textContent = 'Day';
-        // background.style.backgroundColor = "lightblue";
-        
-    }
+
+
     // otherwise set text to night
-    else {
-        timeofday.textContent = 'Night';
-        heading.style.color = "white";
-        background.style.backgroundColor = "black";
-    }
+
+    
     </script>
 </body>
 </html>
