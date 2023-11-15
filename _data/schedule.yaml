@@ -314,11 +314,15 @@ schedule:
           path: /demos/javascript-day1/conditionals/
           type: code        
       - topics: Javascript
-        assigned: 
+        assigned:
+        - "Chapter 22: Using JavaScript" 
         files:
-        - name: 
-          path: 
-          type:
+        - name: Javascript_Day02.pdf
+          path: /assets/slides/11_Javascript_Day2.pdf
+          type: slides
+        - name: "Download: Javascript Day 2 Files"
+          path: /assets/files/javascript-day2.zip
+          type: download
   - week_number: 12
     classes:
       - topics: Javascript
