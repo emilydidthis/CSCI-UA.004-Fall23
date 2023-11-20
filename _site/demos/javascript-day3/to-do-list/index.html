@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>To-Do List</h1>
+        <p>
+          This website has a unique feature: it can delete its own elements!
+          Click on the items below to see the magic happen.
+        </p>
+      </header>
+
+      <ul id="itemList">
+        <li onclick="deleteItem(this)">Item 1</li>
+        <li onclick="deleteItem(this)">Item 2</li>
+        <li onclick="deleteItem(this)">Item 3</li>
+      </ul>
+
+      <div class="content">
+        <p>
+          Once an element is deleted, however, there's no going back.
+        </p>
+      </div>
+    </div>
+
+    <script>
+        function deleteItem(clickedItem) {
+            // Remove the clicked item from the DOM
+            clickedItem.remove();
+        }
+    </script>
+  </body>
+</html>

@@ -336,10 +336,16 @@ schedule:
     classes:
       - topics: Javascript
         assigned: 
+        - "<a href='https://www.w3schools.com/jsref/dom_obj_event.asp'>W3: HTML DOM Events</a>"
+        - "<a href='https://www.w3schools.com/css/css3_transitions.asp'>W3: CSS Transitions</a>"
+
         files:
-        - name: 
-          path: 
-          type: 
+        - name: Javascript_Day03.pdf
+          path: /assets/slides/11_Javascript_Day3.pdf
+          type: slides
+        - name: "Download: Javascript Day 3 Files"
+          path: /assets/files/javascript-day3.zip
+          type: download 
       - topics: "*Thanksgiving Recess*"
         assigned: 
         files:

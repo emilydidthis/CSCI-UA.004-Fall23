@@ -23,15 +23,19 @@
       // let coin = document.getElementById("coin");
       let coin = document.querySelector("#coin");
       
-
-      // if the float > 0.5; show heads
+      // if the float > 0.5 -> show heads
       if (randomFloat > 0.5){
         coin.src = "heads.png"; // change the img src
-      } else { // if the float >= 0.5; show tails
+      } else { // otherwise if the float >= 0.5 -> show tails
         coin.src = "tails.png";
       }
 
-      console.log(coin.src)
+      
+      // TODO: Warmup – Randomize Background Color
+      // 1. use DOM query to select the <body> element in the HTML document and store as a variable
+      // 2. Generate a random hue value between 0 and 359 using the HSL color model
+      // 3. Set the background color of the <body> element to a random color with full saturation and 50% lightness
+
     </script> 
   </body>
 </html>
