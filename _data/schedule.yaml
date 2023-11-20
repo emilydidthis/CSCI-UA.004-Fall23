@@ -338,14 +338,25 @@ schedule:
         assigned: 
         - "<a href='https://www.w3schools.com/jsref/dom_obj_event.asp'>W3: HTML DOM Events</a>"
         - "<a href='https://www.w3schools.com/css/css3_transitions.asp'>W3: CSS Transitions</a>"
-
         files:
         - name: Javascript_Day03.pdf
           path: /assets/slides/11_Javascript_Day3.pdf
           type: slides
         - name: "Download: Javascript Day 3 Files"
           path: /assets/files/javascript-day3.zip
-          type: download 
+          type: download
+        - name: "Flip a Coin – Functions + Event Listeners"
+          path: /demos/javascript-day3/flip-a-coin/
+          type: code
+        - name: "Airports"
+          path: /demos/javascript-day3/airports/
+          type: code
+        - name: "CSS Transitions"
+          path: /demos/javascript-day3/css-transitions/
+          type: code
+        - name: "To Do List"
+          path: /demos/javascript-day3/to-do-list/
+          type: code      
       - topics: "*Thanksgiving Recess*"
         assigned: 
         files:

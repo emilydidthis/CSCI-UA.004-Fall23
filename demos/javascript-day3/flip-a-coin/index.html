@@ -7,35 +7,66 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <style>
       h1, p {font-family: Quicksand;}
+
+      /* body {
+        background-color: hsl(300, 100%, 50%);
+      } */
     </style>
   </head>
 
   <body>
     <img id="coin" src="heads.png" alt="Coin" width="100" height="100">
+    <!-- HTML Event Handler -->
+    <!-- <button onclick="coinFlip()" type="button">Flip</button> -->
+
+    <button type="button">Flip</button>
 
     <!-- Embedded Javascript -->
     <script>
-      // create a random decimal number between 0 and 1 (i.e. 0.4433)
-      let randomFloat = Math.random();  
-      console.log(randomFloat)
 
-      // use DOM query to create a variable that connects to img; can use either:
-      // let coin = document.getElementById("coin");
-      let coin = document.querySelector("#coin");
-      
-      // if the float > 0.5 -> show heads
-      if (randomFloat > 0.5){
-        coin.src = "heads.png"; // change the img src
-      } else { // otherwise if the float >= 0.5 -> show tails
-        coin.src = "tails.png";
+      // Event Handling
+      let btn = document.querySelector("button");
+      // btn.onclick = coinFlip; // DOM Event Handler
+
+      // DOM Event Listener -> allows multiple events to happen on a single element
+      btn.addEventListener("click", coinFlip);
+      btn.addEventListener("click", randomBgColor);
+
+      function coinFlip(){ // In here is all the code associated with flipping a coin
+
+        // create a random decimal number between 0 and 1 (i.e. 0.4433)
+        let randomFloat = Math.random();  
+        console.log("Random Float:", randomFloat)
+
+        // use DOM query to select image and save as variable
+        // can use either of the below:
+        // let coin = document.getElementById("coin");
+        let coin = document.querySelector("#coin");
+        
+        // if the float > 0.5 -> show heads
+        if (randomFloat > 0.5){
+          coin.src = "heads.png"; // change the img src
+        } else { // otherwise if the float >= 0.5 -> show tails
+          coin.src = "tails.png";
+        }
       }
 
-      
-      // TODO: Warmup – Randomize Background Color
-      // 1. use DOM query to select the <body> element in the HTML document and store as a variable
-      // 2. Generate a random hue value between 0 and 359 using the HSL color model
-      // 3. Set the background color of the <body> element to a random color with full saturation and 50% lightness
+      function randomBgColor(){
+        // 1. use DOM query to select the <body> element in the HTML document and store as a variable
+        let background = document.querySelector("body");
 
+        // 2. Generate a random hue value between 0 and 359 using the HSL color model
+        let randomHue = Math.floor(Math.random(0, 1) * 360);
+        console.log("Random Hue:", randomHue);
+
+        // 3. Set the background color of the <body> element to a random color with full saturation and 50% lightness
+        background.style.backgroundColor = "hsl(" + randomHue + ", 100%, 50%)";
+      }
+
+      // Call the functions
+      coinFlip();
+      randomBgColor();
+      
     </script> 
   </body>
 </html>
