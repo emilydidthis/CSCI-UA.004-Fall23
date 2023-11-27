@@ -369,7 +369,7 @@ schedule:
         assigned: 
         - "Chapter 9: Forms"
         - "<a href='https://formspree.io/'>Formspree</a>"
-        - "<a href='https://formspree.io/'>W3: Input Types</a>"
+        - "<a href='https://www.w3schools.com/html/html_form_input_types.asp'>W3: Input Types</a>"
         files:
         - name: Forms.pdf
           path: /assets/slides/12_Forms.pdf
