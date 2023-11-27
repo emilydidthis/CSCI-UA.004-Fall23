@@ -3,7 +3,7 @@ layout: assignments
 title: "Assignment #9"
 due-date: Dec 11
 topic: Final Project
-live: false
+live: true
 ---
 
 ## Final Project
