@@ -9,8 +9,8 @@
   <body>
     <div class="container">
       <header>
-        <h1>To-Do List</h1>
-        <p>
+        <h1 onclick="deleteItem(this)">To-Do List</h1>
+        <p onclick="deleteItem(this)">
           This website has a unique feature: it can delete its own elements!
           Click on the items below to see the magic happen.
         </p>
@@ -22,7 +22,7 @@
         <li onclick="deleteItem(this)">Item 3</li>
       </ul>
 
-      <div class="content">
+      <div class="content" onclick="deleteItem(this)">
         <p>
           Once an element is deleted, however, there's no going back.
         </p>
@@ -32,6 +32,7 @@
     <script>
         function deleteItem(clickedItem) {
             // Remove the clicked item from the DOM
+            console.log(clickedItem);
             clickedItem.remove();
         }
     </script>
