@@ -59,7 +59,7 @@ title: Schedule + Class Notes
 {% elsif file.type == "external code" %}
   <a href="{{ file.path }}" >`{{ file.name }}`</a>
 {% elsif file.type == "download" %}
-  <a href="{{ site.url }}{{ site.baseurl }}{{ file.path }}" >*{{ file.name }}*</a>
+  <a href="{{ site.url }}{{ site.baseurl }}{{ file.path }}" download>*{{ file.name }}*</a>
 {% else %}
   <a href="{{ site.url }}{{ site.baseurl }}{{ file.path }}" >{{ file.name }}</a>
 {% endif %}

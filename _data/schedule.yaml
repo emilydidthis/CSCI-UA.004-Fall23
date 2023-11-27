@@ -367,10 +367,19 @@ schedule:
     classes:
       - topics: Forms
         assigned: 
+        - "Chapter 9: Forms"
+        - "<a href='https://formspree.io/'>Formspree</a>"
+        - "<a href='https://formspree.io/'>W3: Input Types</a>"
         files:
-        - name: 
-          path: 
-          type: 
+        - name: Forms.pdf
+          path: /assets/slides/12_Forms.pdf
+          type: slides
+        - name: Types of Inputs
+          path: /demos/form/input-types.html
+          type: code
+        - name: "Download: Form File"
+          path: /demos/form/index.html
+          type: download
       - topics: Web Audio + Video
         assigned: 
         files:
