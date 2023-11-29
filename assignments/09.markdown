@@ -38,7 +38,7 @@ Create one external style sheet and link it to all of your HTML pages. Code a re
 - Your style rules should specify font family and font size for paragraph and heading text as well as link states including `link`, `visited`, `hover`, and `active`.
 Add a web font to your pages with the CSS `@font-face` rule.
 - Use the CSS Flexible Box Layout Module (Flexbox) for arranging items along one axis and/or the CSS Grid Layout Module for the overall page structure.
-- The viewport should be set on all HTML pages and the CSS should include at least two `@media` queries: one to optimize the layout for different browser widths and one for the user’s preferred color scheme (i.e. dark mode).
+- The viewport should be set on all HTML pages and the CSS should include at least two `@media` queries: one to optimize the layout for different browser widths and one for the user’s [preferred color scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) (i.e. dark mode).
 - Mobile-optimized layout should be limited to one column; desktop layout should include two or more columns.
 
 Allow the content of your website to guide decisions you make about its design.
