@@ -386,9 +386,12 @@ schedule:
       - topics: Web Audio + Video
         assigned: 
         files:
-        - name: 
-          path: 
-          type:   
+        - name: AudioVideo.pdf
+          path: /assets/slides/13_AudioVideo.pdf
+          type: slides 
+        - name: "Download: Audio Video Files"
+          path: /assets/files/audio-video.zip
+          type: download 
   - week_number: 14
     classes:
       - topics: Version Control
