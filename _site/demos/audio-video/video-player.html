@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Custom Video Player</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       svg {
         display: block;
@@ -13,26 +12,36 @@
         height: 100px;
       }
 
-      /* 6. Add CSS to give the buttons a fill color of gray. */ 
+      /* 6. Add CSS to give the buttons a fill color of gray. */
+      polygon, rect {fill: gray;}
+
       /* On hover, the play button should turn green and the pause button should turn red  */
+      polygon:hover {fill: green;}
+
+      rect:hover {fill: red;}
       /* On active click, both buttons should have an opacity of 0.6 */
 
+      polygon:active, rect:active {opacity: 0.6;}
     </style>
   </head>
 
   <body>
-
     <!-- 1. Add HTML <video> element with library-mist.mp4 as the source (640px by 360px) -->
-
-    
+    <video src="library-mist.mp4" type="video/mp4" width="640" height="360">
+      <p>Your browser cannot play this video</p>
+    </video>
 
     <svg viewBox="0 0 200 100">
       <!-- 2. Create SVG play and pause buttons -->
+      <polygon points="0,0 75,50 0,100" />
+      <rect x="100" y="0" width="100" height="100" />
     </svg>
 
     <script>
       // 3. Create 3 DOM queries (1) video (2) play button (3) pause button
-
+      let myVideo = document.querySelector("video");
+      let playBtn = document.querySelector("polygon");
+      let pauseBtn = document.querySelector("rect");
 
       // Function to play video
       function playVideo() {
@@ -45,8 +54,11 @@
       }
 
       // 4. Bind the click of the play button to the playVideo() function
-      // 5. Bind the click of the pause button to the pauseVideo() function 
-
+      playBtn.addEventListener("click", playVideo);
+      
+      // 5. Bind the click of the pause button to the pauseVideo() function
+      pauseBtn.addEventListener("click", pauseVideo);
+      
     </script>
   </body>
 </html>

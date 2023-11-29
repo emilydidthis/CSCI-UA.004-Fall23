@@ -12,12 +12,48 @@
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover; /* Resize the background image to cover the entire container */
         background-attachment: fixed;
-      }
 
+        display: flex;
+        justify-content: space-around;
+        padding-top: 200px;
+      }
     </style>
   </head>
 
   <body>
+    <img src="mario/1-up-mushroom.webp" width="200px"/>
+    <img src="mario/fire-flower.webp" width="200px"/>
+    <img src="mario/coin.webp" width="175px"/>
 
+    <script>
+        // create audio in JavaScript
+        let mushroom = new Audio("mario/1-up.mp3");
+        let flower = new Audio("mario/power-up.mp3");
+        let coin = new Audio("mario/coin.mp3");
+
+        // images is a NodeList
+        let images = document.querySelectorAll("img");
+        console.log(images);
+
+        // mushroom -> image[0]
+        // flower -> image[1]
+        // coin -> image[2]
+
+        // Javscript Arrow Functions
+        // https://www.w3schools.com/js/js_arrow_function.asp
+
+        images[0].addEventListener("click", ()=> {
+            mushroom.play();
+        });
+
+        images[1].addEventListener("click", ()=> {
+            flower.play();
+        });
+
+        images[2].addEventListener("click", ()=> {
+            coin.play();
+        });
+    </script>
   </body>
+
 </html>

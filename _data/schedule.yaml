@@ -396,7 +396,16 @@ schedule:
           type: slides 
         - name: "Download: Audio Video Files"
           path: /assets/files/audio-video.zip
-          type: download 
+          type: download
+        - name: HTML Audio, Video, iframe
+          path: /demos/audio-video/index.html
+          type: code
+        - name: Custom Video Player
+          path: /demos/audio-video/video-player.html
+          type: code 
+        - name: Mario Soundboard
+          path: /demos/audio-video/mario-sounds.html
+          type: code  
   - week_number: 14
     classes:
       - topics: Version Control
