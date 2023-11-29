@@ -384,7 +384,12 @@ schedule:
           path: /demos/form/
           type: code     
       - topics: Web Audio + Video
-        assigned: 
+        assigned:
+        - "Chapter 10: Embedded Media"
+        - "<a href='http://www.w3schools.com/html/html5_audio.asp'>HTML Audio</a>"
+        - "<a href='http://www.w3schools.com/html/html5_video.asp'>HTML Video</a>" 
+        - "<a href='https://www.audacityteam.org/'>Audacity open source sound editor</a>"
+        - "<a href='https://handbrake.fr/'>HandBrake open source video transcoder</a>" 
         files:
         - name: AudioVideo.pdf
           path: /assets/slides/13_AudioVideo.pdf
