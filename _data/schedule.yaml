@@ -421,7 +421,13 @@ schedule:
           type: slides
         - name: "Download: Github Practice Files"
           path: /assets/files/github-practice.zip
-          type: download  
+          type: download 
+        - name: NYC Website Repository
+          path: https://github.com/emilydidthis/nyc-website
+          type: external code
+        - name: Airport Repository
+          path: https://github.com/emilydidthis/Airports
+          type: external code
       - topics: Web Design Workshop
         assigned: 
         files:
