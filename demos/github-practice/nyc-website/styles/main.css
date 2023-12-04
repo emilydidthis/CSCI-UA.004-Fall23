@@ -1,0 +1,116 @@
+/* ------------ Day 01 ------------ */
+
+h1, h2, h3, h4, h5, h6, th {
+    font-family: Helvetica, sans-serif; /* font with fallback font category */
+    text-align: left;
+    color: #2d2d2d; /* dark gray*/
+}
+
+p, ul, td {
+    font-family: Georgia, serif; /* font with fallback font category */
+}
+
+a:link, a:visited {
+    color: #2d2d2d;
+    text-decoration: underline;
+}
+
+a:hover {
+    background-color: orange;
+} 
+a:active {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+body {
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+}
+
+/* ------------ Day 02 ------------ */
+
+body {
+    background-color: white;
+    background-image: url(../images/nyc-seal.png);
+    background-repeat: no-repeat;
+    background-size: 125px 125px;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+}
+
+
+.nyc {
+    text-transform: uppercase;
+}
+
+.even {
+    background-color: lightgray;
+}
+
+.odd {
+    background-color: white;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* ------------ Flexbox ------------ */
+
+@media (min-width: 850px){
+    main {
+        margin-top: 90px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    article, section {
+        width: calc(96%/3)
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+/* ------------ More Box Model ------------ */
+#population {
+    border-top: 1px solid orange;
+    margin-top: 30px;
+}
+
+footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p, ul, td {
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+th {
+    height: 2.8em;
+}
+
+td {
+    padding: 8px;
+}
+
+#credit {
+    font-size: .7em;
+    text-align: center;
+}

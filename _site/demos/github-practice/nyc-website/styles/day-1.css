@@ -1,0 +1,35 @@
+/* Day 01 */
+
+h1, h2, th {
+    font-family: Helvetica, sans-serif; /* font with fallback font category */
+    text-align: left;
+    color: #2d2d2d; /* dark gray*/
+}
+
+p, ul, td {
+    font-family: Georgia, serif; /* font with fallback font category */
+}
+
+a:link, a:visited {
+    color: #2d2d2d;
+    text-decoration: underline;
+}
+
+a:hover {
+    background-color: orange;
+} 
+a:active {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+body {
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+}
