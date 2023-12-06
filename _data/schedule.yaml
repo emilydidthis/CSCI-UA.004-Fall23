@@ -431,9 +431,9 @@ schedule:
       - topics: Web Design Workshop
         assigned: 
         files:
-        - name: 
-          path: 
-          type:
+        - name: Workshop-FinalExamInfo.pdf
+          path: /assets/slides/15_Workshop_FinalExamInfo.pdf
+          type: slides
   - week_number: 15
     classes:
       - topics: Web Hosting + Domain Names
