@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/styles.css">
     <link rel="icon" type="image/ico" href="{{ site.url }}{{ site.baseurl }}/assets/images/favicon.ico?v=1">
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-84ZWQ3K7Y3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-84ZWQ3K7Y3');
+  </script>
   <body>
     <h1>{{ site.title }}</h1>
     {% include navigation.html %}
