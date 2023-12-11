@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myers-Briggs Personalities</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {font-family: "Montserrat", sans-serif;}
+        #title {font-style: italic;}
+    </style>
+</head>
+    
+<body>
+    <header>
+        <h1 id="title">Myers-Briggs Personality Types</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="types/analysts.html">Analysts</a></li>
+            <li><a href="types/dipomats.html">Diplomats</a></li>
+            <li><a href="types/sentinels.html">Sentinels</a></li>
+            <li><a href="types/explorers.html">Explorers</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="personalities">
+            <div class="type analyst" id="intj" onclick="introverts()">INTJ</div>
+            <div class="type diplomat" id="infp" onclick="introverts()">INFP</div>
+            <div class="type diplomat" id="infj" onclick="introverts()">INFJ</div>
+            <div class="type analyst" id="intp" onclick="introverts()">INTP</div>
+            <div class="type sentinel" id="istj" onclick="introverts()">ISTJ</div>
+            <div class="type sentinel" id="isfj" onclick="introverts()">ISFJ</div>
+            <div class="type explorer" id="istp" onclick="introverts()">ISTP</div>
+            <div class="type explorer" id="isfp" onclick="introverts()">ISFP</div>
+            <div class="type analyst" id="entj" onclick="extroverts()">ENTJ</div>
+            <div class="type diplomat" id="enfj" onclick="extroverts()">ENFJ</div>
+            <div class="type analyst" id="entp" onclick="extroverts()">ENTP</div>
+            <div class="type diplomat" id="enfp" onclick="extroverts()">ENFP</div>
+            <div class="type sentinel" id="estj" onclick="extroverts()">ESTJ</div>
+            <div class="type sentinel" id="esfj" onclick="extroverts()">ESFJ</div>
+            <div class="type explorer" id="estp" onclick="extroverts()">ESTP</div>
+            <div class="type explorer" id="esfp" onclick="extroverts()">ESFP</div>
+        </section>
+        <article>
+            MBTI classifies personalities based on four dichotomies, each consisting of two opposite preferences:
+            <ol>
+                <li>Extraversion (E) / Introversion (I)</li>
+                <li>Sensing (S) / Intuition (N)</li>
+                <li>Thinking (T) / Feeling (F)</li>
+                <li>Judging (J) / Perceiving (P)</li>
+            </ol>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2023 <span id=credit>Myers-Briggs Personalities</span></p>
+    </footer>
+
+    <script>
+        let diplomats = document.querySelectorAll(".diplomat");
+        let explorers = document.querySelectorAll(".explorer");
+        let analysts = document.querySelectorAll(".analyst");
+        let sentinels = document.querySelectorAll(".sentinel");
+        let credit = document.getElementById("credit");
+
+        function introverts(){
+            credit.innerText = "Introverts are the best";
+        }
+
+        function extroverts(){
+            credit.innerText = "Extroverts are the best";
+        }
+        
+        function randomColor(){
+            let randomHue = Math.floor(Math.random(0, 1) * 360);
+            diplomats[0].style.backgroundColor = "hsl(" + randomHue + ", 100%, 50%)";
+            diplomats[1].style.backgroundColor = "hsl(" + randomHue + ", 100%, 50%)";
+            diplomats[2].style.backgroundColor = "hsl(" + randomHue + ", 100%, 50%)";
+            diplomats[3].style.backgroundColor = "hsl(" + randomHue + ", 100%, 50%)";
+
+            randomHue = Math.floor(Math.random(0, 1) * 360);
+            explorers[0].style.backgroundColor = "hsl(" + randomHue + ", 100%, 50%)";
+            explorers[1].style.backgroundColor = "hsl(" + randomHue + ", 100%, 50%)";
+            explorers[2].style.backgroundColor = "hsl(" + randomHue + ", 100%, 50%)";
+            explorers[3].style.backgroundColor = "hsl(" + randomHue + ", 100%, 50%)";
+
+            randomHue = Math.floor(Math.random(0, 1) * 360);
+            analysts[0].style.backgroundColor = "hsl(" + randomHue + ", 100%, 50%)";
+            analysts[1].style.backgroundColor = "hsl(" + randomHue + ", 100%, 50%)";
+            analysts[2].style.backgroundColor = "hsl(" + randomHue + ", 100%, 50%)";
+            analysts[3].style.backgroundColor = "hsl(" + randomHue + ", 100%, 50%)";
+
+            randomHue = Math.floor(Math.random(0, 1) * 360);
+            sentinels[0].style.backgroundColor = "hsl(" + randomHue + ", 100%, 50%)";
+            sentinels[1].style.backgroundColor = "hsl(" + randomHue + ", 100%, 50%)";
+            sentinels[2].style.backgroundColor = "hsl(" + randomHue + ", 100%, 50%)";
+            sentinels[3].style.backgroundColor = "hsl(" + randomHue + ", 100%, 50%)";
+        }
+        
+        randomColor();
+    </script>
+</body>
+</html>

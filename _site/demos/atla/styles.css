@@ -30,9 +30,18 @@ nav {
 
 main {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "W E"
+    "F A"
+    "I I";
   gap: 0.3em;
 }
+
+#water {grid-area: W;}
+#earth {grid-area: E;}
+#fire {grid-area: F;}
+#air {grid-row: A;}
+article {grid-area: I;}
 
 img {
   display: block;
@@ -78,7 +87,7 @@ h1 > a:link, h1 > a:visited {
 }
 
 a:hover {
-  background-color: magenta;
+  background-color: lightblue;
 }
 
 a:active {
@@ -106,13 +115,24 @@ a.seasons:active {
   nav > a {
     margin-right: 1em;
   }
+  main {
+    display: grid;
+    grid-template-areas: 
+      "W E F A"
+      "I I I I";
+    gap: 0.3em;
+  }
 
 }
 
 @media (min-width: 45em) {
 
   main {
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-areas: 
+      "W E I"
+      "F A I";
+    gap: 0.3em;
   }
 
   article {

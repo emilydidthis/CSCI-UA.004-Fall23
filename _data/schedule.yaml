@@ -438,10 +438,19 @@ schedule:
     classes:
       - topics: Web Hosting + Domain Names
         assigned:
+        - <a href="https://pages.github.com/">GitHub Pages</a>
+        # - <a href="https://cargo.site/">Cargo</a>
+        - <a href="https://glitch.com/">Glitch</a>
+        - <a href="https://www.pair.com/">Pair Networks</a>
+        - <a href="https://reclaimhosting.com/">Reclaim Hosting</a>
+        - <a href="https://analytics.google.com/">Google Analytics</a>
         files:
-        - name: 
-          path: 
-          type: 
+        - name: WebHostingDomains.pdf
+          path: /assets/slides/16_WebHostingDomains.pdf
+          type: slides
+        - name: "Practice Final"
+          path: /assets/files/web-mock-final-fall2023.pdf
+          type: slides  
       - topics: Review
         assigned: 
         files:

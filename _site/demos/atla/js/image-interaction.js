@@ -2,7 +2,7 @@
 Changing Image Opacity
 */
 
-let images = document.querySelectorAll('main > a > img');
+let images = document.querySelectorAll('main > img');
 // console.log(images);
 
 function changeOpacity() {
