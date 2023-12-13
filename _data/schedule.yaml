@@ -454,6 +454,9 @@ schedule:
       - topics: Review
         assigned: 
         files:
-        - name: 
-          path: 
-          type:      
+        - name: FinalReviewAgenda.pdf
+          path: /assets/slides/17_FinalReview.pdf
+          type: slides 
+        - name: "Download: Review Site Files"
+          path: /assets/files/final-review.zip
+          type: download     

@@ -3,21 +3,28 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Main Characters in Avatar the Last Airbender</title>
+    <title>Elements in Avatar the Last Airbender</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="img/png" href="images/earth.png">
     <link rel="stylesheet" href="styles.css">
   </head>
   <style>
     a:hover {
       text-decoration: underline;
     }
+    .show {
+      font-style: italic;
+    }
+    span {
+      font-style: bold;
+    }
+
+   
   </style>
 
   <body>
     <div id="container">
       <header>
-        <h1><a href="./">Elements in Avatar the Last Airbender</a></h1>
+        <h1>Elements in <span class="show">Avatar the Last Airbender</span></h1>
       </header>
 
       <nav>
@@ -28,7 +35,7 @@
       </nav>
 
       <main>
-       
+        
         <img src="images/water.jpg" id="water" srcset="images/water-2x.jpg 2x" width="325" height="325" alt="Katara waterbending">
 
         <img src="images/earth.jpg" id="earth" srcset="images/earth-2x.jpg 2x" width="325" height="325" alt="Toph earthbending">
@@ -38,21 +45,48 @@
         <img src="images/air.jpg" id="air" srcset="images/air-2x.jpg 2x" width="325" height="325" alt="Aang airbending">
     
         <article>
-          <p>In the fictional world of <em>Avatar: The Last Airbender</em>, people have the ability to manipulate or "bend" the four classical elements: Water, Earth, Fire, and Air. These elements play a central role in the show's plot, and individuals known as benders can harness the power of their respective element to various degrees of skill. Click each image for a quick overview of each element.</p>
+          <p>In the fictional world of <span class="show">Avatar: The Last Airbender</span>, people have the ability to manipulate or "bend" the four classical elements: Water, Earth, Fire, and Air. These elements play a central role in the show's plot, and individuals known as benders can harness the power of their respective element to various degrees of skill.</p>
+          <p id="earth-blurb">Earthbending embodies strength and resilience. This art, based on the manipulation of rock and soil, mirrors the stability and power of the earth itself. Earthbenders, like Toph Beifong, demonstrate not just physical prowess but a deep connection to the earth, sensing vibrations and using their strong will and patience in combat. Earthbending, with its roots in Hung Gar Kung Fu, represents endurance and adaptability, essential to the enduring spirit of the Earth Kingdom.</p>
         </article>
       </main>
 
       <footer>
-        <p><a href="https://www.nyu.edu/">Click here for the latest ATLA news</a></p>
+        <p><em>Peace and balance amongst all beings reigned – Avatar Wan</em></p>
 
         <svg id="color-mode-icon" viewBox="0 0 100 100" role="button">
-          <title>Toggle color mode</title>
+          <title>Color mode</title>
           <path d="m50,0C22.39,0,0,22.39,0,50s22.39,50,50,50,50-22.39,50-50S77.61,0,50,0Zm0,94V6c24.26,0,44,19.74,44,44s-19.74,44-44,44Z"/>
         </svg>
       </footer>
     </div>
 
     <script src="js/image-interaction.js"></script>
-    <script src="js/color-mode.js"></script>
+    <script>
+      let icon = document.getElementById('color-mode-icon');
+      let body = document.querySelector('body');
+      let navLinks = document.querySelectorAll('nav > a');
+      body.style.backgroundColor = "white";
+      function colorMode() {
+        console.log(body.style.backgroundColor)
+        if (body.style.backgroundColor == "white"){
+          body.style.backgroundColor = "black";
+          body.style.color = "white";
+          navLinks[0].style.color = "white";
+          navLinks[1].style.color = "white";
+          navLinks[2].style.color = "white";
+          navLinks[3].style.color = "white";
+          icon.style.fill = "white";
+        } else {
+          body.style.backgroundColor = "white";
+          body.style.color = "black";
+          navLinks[0].style.color = "black";
+          navLinks[1].style.color = "black";
+          navLinks[2].style.color = "black";
+          navLinks[3].style.color = "black";
+          icon.style.fill = "black";
+        }
+      }
+      icon.addEventListener('click', colorMode);
+    </script>
   </body>
 </html>
