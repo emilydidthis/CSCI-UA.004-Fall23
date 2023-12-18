@@ -450,7 +450,10 @@ schedule:
           type: slides
         - name: "Practice Final"
           path: /assets/files/web-mock-final-fall2023.pdf
-          type: slides  
+          type: slides
+        - name: "Practice Final — ANSWERS"
+          path: /assets/files/web-mock-final-fall2023-ANSWERS.pdf
+          type: slides    
       - topics: Review
         assigned: 
         files:
