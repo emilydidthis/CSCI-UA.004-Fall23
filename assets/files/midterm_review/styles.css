@@ -1,0 +1,35 @@
+main {
+    display: flex;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#col1, #col2 {
+    width: 50%;
+}
+
+#col1 {
+    margin-right: 50px;
+}
+
+#col2 {
+    border-top: 1px solid black;
+}
+
+img {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+}
